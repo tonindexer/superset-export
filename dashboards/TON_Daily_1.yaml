@@ -1,0 +1,255 @@
+dashboard_title: TON Daily
+description: null
+css: ''
+slug: daily
+uuid: 6b94bfe1-b722-4503-8129-f8687025b84d
+position:
+  CHART-125hNg_ox1:
+    children: []
+    id: CHART-125hNg_ox1
+    meta:
+      chartId: 22
+      height: 50
+      sliceName: Number of Wallets by Balance
+      uuid: 53266c00-0806-40c0-93e9-db700ea39283
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-I7_6Ez9HjJ
+    type: CHART
+  CHART-L8U02kLkv8:
+    children: []
+    id: CHART-L8U02kLkv8
+    meta:
+      chartId: 21
+      height: 50
+      sliceName: Number of Deployed Wallets
+      uuid: a946f94f-d058-42fe-9ad0-891fd3859760
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-I7_6Ez9HjJ
+    type: CHART
+  CHART-explore-54-1:
+    children: []
+    id: CHART-explore-54-1
+    meta:
+      chartId: 54
+      height: 50
+      sliceName: Number of Unique Contract Code Hashes
+      uuid: 6a99b2b2-8bde-4814-b427-206f34fadbf6
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-06wrE45wlb
+    type: CHART
+  CHART-mMPStHb00Y:
+    children: []
+    id: CHART-mMPStHb00Y
+    meta:
+      chartId: 16
+      height: 50
+      sliceName: Number of Transactions by Workchain
+      uuid: 19e7963d-b7de-47f5-b4f6-191166c8d328
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-61XtiFBRVo
+    type: CHART
+  CHART-o0ETnBFpJM:
+    children: []
+    id: CHART-o0ETnBFpJM
+    meta:
+      chartId: 14
+      height: 50
+      sliceName: Number of Active Addresses
+      uuid: b42eb256-22b2-4fdb-b790-6cf6b96fdedd
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-06wrE45wlb
+    type: CHART
+  CHART-v6aTkkV5ln:
+    children: []
+    id: CHART-v6aTkkV5ln
+    meta:
+      chartId: 20
+      height: 50
+      sliceName: Number of Deployed Contracts
+      uuid: a3c28242-6e03-49f5-8bed-f53629fb75aa
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-06wrE45wlb
+    type: CHART
+  CHART-vG9O0vP38c:
+    children: []
+    id: CHART-vG9O0vP38c
+    meta:
+      chartId: 17
+      height: 50
+      sliceName: Number of Active Wallets
+      uuid: 1cd419c2-7355-46a4-ad27-e28bbf2f7425
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-I7_6Ez9HjJ
+    type: CHART
+  CHART-vdEyh3IR29:
+    children: []
+    id: CHART-vdEyh3IR29
+    meta:
+      chartId: 18
+      height: 50
+      sliceName: Transaction Fees by Workchain
+      uuid: 4bb68104-f44e-4e5c-87a3-283cdb85591a
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-61XtiFBRVo
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-61XtiFBRVo
+    - ROW-06wrE45wlb
+    - ROW-I7_6Ez9HjJ
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: TON Daily
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-06wrE45wlb:
+    children:
+    - CHART-o0ETnBFpJM
+    - CHART-v6aTkkV5ln
+    - CHART-explore-54-1
+    id: ROW-06wrE45wlb
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-61XtiFBRVo:
+    children:
+    - CHART-mMPStHb00Y
+    - CHART-vdEyh3IR29
+    id: ROW-61XtiFBRVo
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-I7_6Ez9HjJ:
+    children:
+    - CHART-vG9O0vP38c
+    - CHART-L8U02kLkv8
+    - CHART-125hNg_ox1
+    id: ROW-I7_6Ez9HjJ
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '14':
+      id: 14
+      crossFilters:
+        scope: global
+        chartsInScope: []
+    '16':
+      id: 16
+      crossFilters:
+        scope: global
+        chartsInScope: []
+    '17':
+      id: 17
+      crossFilters:
+        scope: global
+        chartsInScope: []
+    '18':
+      id: 18
+      crossFilters:
+        scope: global
+        chartsInScope: []
+    '20':
+      id: 20
+      crossFilters:
+        scope: global
+        chartsInScope: []
+    '21':
+      id: 21
+      crossFilters:
+        scope: global
+        chartsInScope: []
+    '22':
+      id: 22
+      crossFilters:
+        scope: global
+        chartsInScope: []
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope: []
+  color_scheme: supersetColors
+  refresh_frequency: 0
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  shared_label_colors:
+    '0': '#1FA8C9'
+    '100': '#1FA8C9'
+    '1000': '#454E7C'
+    '10000': '#5AC189'
+    '100000': '#FF7F44'
+    '1000000': '#666666'
+    '10000000': '#E04355'
+    '-1': '#454E7C'
+    uniqExact(address): '#1FA8C9'
+  color_scheme_domain:
+  - '#1FA8C9'
+  - '#454E7C'
+  - '#5AC189'
+  - '#FF7F44'
+  - '#666666'
+  - '#E04355'
+  - '#FCC700'
+  - '#A868B7'
+  - '#3CCCCB'
+  - '#A38F79'
+  - '#8FD3E4'
+  - '#A1A6BD'
+  - '#ACE1C4'
+  - '#FEC0A1'
+  - '#B2B2B2'
+  - '#EFA1AA'
+  - '#FDE380'
+  - '#D3B3DA'
+  - '#9EE5E5'
+  - '#D1C6BC'
+version: 1.0.0

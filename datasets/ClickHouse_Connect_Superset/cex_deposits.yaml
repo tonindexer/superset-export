@@ -1,0 +1,94 @@
+table_name: cex_deposits
+main_dttm_col: created_at
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: ton
+sql: "SELECT src_address, src_labels.name as src_label, dst_address, address_labels.name\
+  \ AS dst_label, amount / 1e9 as deposit_amount, messages.created_at as created_at\n\
+  FROM messages\nINNER JOIN address_labels ON messages.dst_address = address_labels.address\n\
+  LEFT OUTER JOIN address_labels as src_labels ON messages.src_address = src_labels.address\n\
+  WHERE messages.type = 'INTERNAL' AND hasAny(address_labels.categories, ['centralized_exchange'])\
+  \ AND \n  positionCaseInsensitive(address_labels.name, 'withdraw') == 0 AND positionCaseInsensitive(address_labels.name,\
+  \ 'witdraw') == 0 AND positionCaseInsensitive(address_labels.name, 'cold storage')\
+  \ == 0\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+uuid: a28c3436-8e41-42e8-a9fb-a69f9ee17e50
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: deposit_amount
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Float64
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: created_at
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DateTime
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: dst_label
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: src_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: dst_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+version: 1.0.0
+database_uuid: 7dedc5b6-fb1a-4fb7-9431-12dcf78336aa

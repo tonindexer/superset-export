@@ -1,0 +1,63 @@
+slice_name: Number of Transactions by Workchain
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_line
+params:
+  datasource: 5__table
+  viz_type: echarts_timeseries_line
+  slice_id: 16
+  x_axis: created_at
+  time_grain_sqla: P1D
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - count
+  groupby:
+  - workchain
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: created_at
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_k1so8sbch_zgrdhu42i8b
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  seriesType: line
+  only_total: true
+  opacity: 0.2
+  markerSize: 6
+  zoomable: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds:
+  - null
+  - null
+  extra_form_data: {}
+  dashboards: []
+cache_timeout: null
+uuid: 19e7963d-b7de-47f5-b4f6-191166c8d328
+version: 1.0.0
+dataset_uuid: a44dee17-b9f5-450b-a4a8-ae2a19c370ca

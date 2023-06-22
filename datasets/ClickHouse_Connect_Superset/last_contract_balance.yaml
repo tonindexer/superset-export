@@ -1,0 +1,90 @@
+table_name: last_contract_balance
+main_dttm_col: updated_at
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: ton
+sql: "select \n  address,\n  any(workchain) as workchain,\n  argMax(balance, last_tx_lt)\
+  \ / 1e9 as balance,\n  argMax(types, last_tx_lt) as interfaces,\n  argMax(updated_at,\
+  \ last_tx_lt) as updated_at\nfrom \n  account_states \nwhere \n  is_active and status\
+  \ = 'ACTIVE' \ngroup by\n  address;"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+uuid: 14757eac-4938-4795-8039-02fa4c83fa47
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: interfaces
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Array(String)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: workchain
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Int32
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: balance
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Float64
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: updated_at
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DateTime
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+version: 1.0.0
+database_uuid: 7dedc5b6-fb1a-4fb7-9431-12dcf78336aa

@@ -1,0 +1,154 @@
+table_name: getgems_all_types_sales
+main_dttm_col: updated_at
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: ton
+sql: "WITH '2022-04-20' AS start_date\n\nSELECT \n  updated_at,\n  'fix_price' as\
+  \ sale_type,\n  messages.src_address as buyer_address,\n  JSONExtractInt(executed_get_methods,\
+  \ 1, 1, 'returns', 7) / 1e9 as full_price,\n  JSONExtractBool(executed_get_methods,\
+  \ 1, 1, 'returns', 2) as is_completed,\n  JSONExtractString(executed_get_methods,\
+  \ 1, 1, 'returns', 4) as marketplace_address,\n  JSONExtractString(executed_get_methods,\
+  \ 1, 1, 'returns', 5) as nft_address\nFROM (\n  SELECT \n    address, \n    any(types)\
+  \ as interfaces,\n    argMax(executed_get_methods, last_tx_lt) as executed_get_methods,\
+  \ \n    argMax(updated_at, last_tx_lt) as updated_at,\n    max(last_tx_lt) as latest_tx_lt\n\
+  \    -- argMax(minter_address, last_tx_lt) as minter_address\n  FROM account_states\n\
+  \  WHERE hasAny(types, ['getgems_fix_price_sale_v2', 'getgems_fix_price_sale_v3',\
+  \ 'getgems_fix_price_sale_v3r2'])\n  GROUP BY address\n) as latest_nft_sale_state\n\
+  INNER JOIN (\n  SELECT \n    hash, \n    src_address, \n    dst_address, \n    dst_tx_lt,\
+  \ \n    amount, \n    operation_id \n  FROM messages \n  WHERE created_at > start_date\n\
+  ) as messages ON messages.dst_address = latest_nft_sale_state.address AND messages.dst_tx_lt\
+  \ = latest_tx_lt\nINNER JOIN (\n  SELECT \n    in_msg_hash, \n    compute_phase_exit_code,\
+  \ \n    action_phase_result_code \n  FROM transactions \n  WHERE created_at > start_date\n\
+  ) as transactions ON transactions.in_msg_hash = messages.hash\nWHERE \n  is_completed\
+  \ = true AND\n  compute_phase_exit_code = 0 AND \n  action_phase_result_code = 0\
+  \ AND \n  operation_id IN (0, 2)\n  \nUNION ALL\n\nSELECT \n  updated_at,\n  'auction'\
+  \ as sale_type,\n  JSONExtractString(executed_get_methods, 1, 1, 'returns', 8) as\
+  \ buyer_address,\n  JSONExtractUInt(executed_get_methods, 1, 1, 'returns', 7) /\
+  \ 1e9 as full_price,\n  JSONExtractBool(executed_get_methods, 1, 1, 'returns', 2)\
+  \ as is_completed,\n  JSONExtractString(executed_get_methods, 1, 1, 'returns', 4)\
+  \ as marketplace_address,\n  JSONExtractString(executed_get_methods, 1, 1, 'returns',\
+  \ 5) as nft_address\nFROM (\n  SELECT \n    address, \n    any(types) as interfaces,\
+  \ \n    argMax(executed_get_methods, last_tx_lt) as executed_get_methods, \n   \
+  \ argMax(updated_at, last_tx_lt) as updated_at,\n    max(last_tx_lt) as latest_tx_lt\n\
+  \    -- argMax(minter_address, last_tx_lt) as minter_address\n  FROM account_states\n\
+  \  WHERE hasAny(types, ['getgems_nft_auction', 'getgems_nft_auction_v2', 'getgems_nft_auction_v3r2'])\n\
+  \  GROUP BY address\n) as latest_nft_sale_state\nWHERE \n  is_completed = true AND\n\
+  \  JSONExtractBool(executed_get_methods, 1, 1, 'returns', 20) = false AND\n  full_price\
+  \ > 0\n\nUNION ALL\n\nSELECT \n  updated_at,\n  'offer' as sale_type,\n  JSONExtractString(executed_get_methods,\
+  \ 1, 1, 'returns', 7) as buyer_address,\n  JSONExtractUInt(executed_get_methods,\
+  \ 1, 1, 'returns', 8) / 1e9 as full_price,\n  JSONExtractBool(executed_get_methods,\
+  \ 1, 1, 'returns', 2) as is_completed,\n  JSONExtractString(executed_get_methods,\
+  \ 1, 1, 'returns', 5) as marketplace_address,\n  JSONExtractString(executed_get_methods,\
+  \ 1, 1, 'returns', 6) as nft_address\nFROM (\n  SELECT \n    address, \n    any(types)\
+  \ as interfaces, \n    argMax(executed_get_methods, last_tx_lt) as executed_get_methods,\
+  \ \n    argMax(updated_at, last_tx_lt) as updated_at,\n    max(last_tx_lt) as latest_tx_lt\n\
+  \    -- argMax(minter_address, last_tx_lt) as minter_address\n  FROM account_states\n\
+  \  WHERE hasAny(types, ['getgems_nft_offer'])\n  GROUP BY address\n) as latest_nft_sale_state\n\
+  INNER JOIN (\n  SELECT hash, src_address, dst_address, dst_tx_lt, amount, operation_id\
+  \ FROM messages WHERE created_at > start_date\n) as messages ON messages.dst_address\
+  \ = latest_nft_sale_state.address AND messages.dst_tx_lt = latest_tx_lt\nWHERE \n\
+  \  is_completed = true AND \n  operation_id = 0x05138d91"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+uuid: c63eba40-4891-4891-b6b9-58da58538e56
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: full_price
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Float64
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: is_completed
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: UInt8
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: updated_at
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DateTime
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: marketplace_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: buyer_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: nft_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: sale_type
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 7dedc5b6-fb1a-4fb7-9431-12dcf78336aa

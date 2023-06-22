@@ -1,0 +1,20 @@
+schema: ton
+label: tg_numbers_sales
+description: ''
+sql: "WITH '2022-12-05' AS start_date\n\nSELECT\n  -- tx.hash as tx_hash,\n  tx.out_amount\
+  \ / 1e9 as sale_price,\n  JSONExtractString(out_msg.data_json, 'prev_owner') as\
+  \ seller_address,\n  out_msg.dst_address as buyer_address,\n  out_msg.created_at\
+  \ as timestamp\n\nFROM messages as out_msg\n\nLEFT JOIN (\n  SELECT \n    -- hash,\
+  \ \n    address, \n    created_lt, \n    in_msg_hash,\n    out_amount \n  FROM transactions\
+  \ \n  WHERE created_at > start_date\n) AS tx ON tx.address = out_msg.src_address\
+  \ AND tx.created_lt = out_msg.src_tx_lt\n\nLEFT JOIN (\n  SELECT \n    hash, \n\
+  \    operation_name\n  FROM messages \n  WHERE created_at > start_date\n) AS in_msg\
+  \ ON tx.in_msg_hash = in_msg.hash\n\nWHERE\n  in_msg.operation_name != 'nft_item_transfer'\
+  \ AND\n  in_msg.operation_name != 'teleitem_msg_deploy' AND\n  out_msg.operation_name\
+  \ = 'nft_item_ownership_assigned' AND\n  src_address IN (\n    SELECT DISTINCT address\
+  \ \n    FROM account_states \n    WHERE \n      hasAny(types, ['telemint_nft_item'])\
+  \ AND \n      minter_address = unhex('000e41dc1dc3c9067ed24248580e12b3359818d83dee0304fabcf80845eafafdb2')\n\
+  \  )\n"
+uuid: f80a1858-6be5-4d85-acc0-3bb4e7fdb995
+version: 1.0.0
+database_uuid: 7dedc5b6-fb1a-4fb7-9431-12dcf78336aa

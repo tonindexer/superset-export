@@ -1,0 +1,36 @@
+slice_name: Telegram Numbers Total Number of Traders
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 41__table
+  viz_type: big_number_total
+  slice_id: 46
+  metric:
+    aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: false
+    label: uniqExact(buyer_address, seller_address)
+    optionName: metric_j73ywkmtj1q_buzfvpqkare
+    sqlExpression: uniqExact(buyer_address, seller_address)
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: timestamp
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 6
+  - 3
+cache_timeout: null
+uuid: af045547-40e7-40cb-8caf-7437e557a640
+version: 1.0.0
+dataset_uuid: 6e508860-be42-41bc-bd7e-85e671e8fd15

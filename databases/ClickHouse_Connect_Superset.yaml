@@ -1,0 +1,13 @@
+database_name: ClickHouse Connect (Superset)
+sqlalchemy_uri: clickhousedb+connect://superset:XXXXXXXXXX@127.0.0.1:8123/ton
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: false
+extra:
+  allows_virtual_table_explore: true
+uuid: 7dedc5b6-fb1a-4fb7-9431-12dcf78336aa
+version: 1.0.0

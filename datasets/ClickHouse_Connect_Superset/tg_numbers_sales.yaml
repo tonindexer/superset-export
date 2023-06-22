@@ -1,0 +1,87 @@
+table_name: tg_numbers_sales
+main_dttm_col: timestamp
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: ton
+sql: "WITH '2022-12-05' AS start_date\n\nSELECT\n  -- tx.hash as tx_hash,\n  tx.out_amount\
+  \ / 1e9 as sale_price,\n  JSONExtractString(out_msg.data_json, 'prev_owner') as\
+  \ seller_address,\n  out_msg.dst_address as buyer_address,\n  out_msg.created_at\
+  \ as timestamp\n\nFROM messages as out_msg\n\nLEFT JOIN (\n  SELECT \n    -- hash,\
+  \ \n    address, \n    created_lt, \n    in_msg_hash,\n    out_amount \n  FROM transactions\
+  \ \n  WHERE created_at > start_date\n) AS tx ON tx.address = out_msg.src_address\
+  \ AND tx.created_lt = out_msg.src_tx_lt\n\nLEFT JOIN (\n  SELECT \n    hash, \n\
+  \    operation_name\n  FROM messages \n  WHERE created_at > start_date\n) AS in_msg\
+  \ ON tx.in_msg_hash = in_msg.hash\n\nWHERE\n  in_msg.operation_name != 'nft_item_transfer'\
+  \ AND\n  in_msg.operation_name != 'teleitem_msg_deploy' AND\n  out_msg.operation_name\
+  \ = 'nft_item_ownership_assigned' AND\n  src_address IN (\n    SELECT DISTINCT address\
+  \ \n    FROM account_states \n    WHERE \n      hasAny(types, ['telemint_nft_item'])\
+  \ AND \n      minter_address = unhex('000e41dc1dc3c9067ed24248580e12b3359818d83dee0304fabcf80845eafafdb2')\n\
+  \  )\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+uuid: 6e508860-be42-41bc-bd7e-85e671e8fd15
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: sale_price
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Float64
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: timestamp
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DateTime
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: buyer_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: seller_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 7dedc5b6-fb1a-4fb7-9431-12dcf78336aa

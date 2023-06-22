@@ -1,0 +1,75 @@
+slice_name: CEX Deposits
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_area
+params:
+  datasource: 19__table
+  viz_type: echarts_area
+  slice_id: 27
+  x_axis: created_at
+  time_grain_sqla: P1D
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - count
+  groupby:
+  - dst_label
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: created_at
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_1gp2n816wqk_jbfmwzixcw
+  - expressionType: SQL
+    sqlExpression: src_label = ''
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_mg96f6ahexa_b5t2wimrhop
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  seriesType: line
+  opacity: 0.2
+  only_total: true
+  markerSize: 6
+  zoomable: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds:
+  - null
+  - null
+  granularity_sqla: created_at
+  extra_form_data: {}
+  dashboards:
+  - 2
+cache_timeout: null
+uuid: a6b8a1b9-c196-465e-a42d-3edcf6478f8b
+version: 1.0.0
+dataset_uuid: fdd9d9f9-b89a-495b-8125-b09922f110bc

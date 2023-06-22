@@ -1,0 +1,108 @@
+table_name: telegram_numbers_on_sale
+main_dttm_col: updated_at
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: ton
+sql: "SELECT \n  address as nft_address,\n  JSONExtractString(get_methods, 'telemint_nft_item',\
+  \ 3, 'returns', 1) as beneficiary_address,\n  JSONExtractUInt(get_methods, 'telemint_nft_item',\
+  \ 3, 'returns', 2) / 1e9 as initial_min_bid,\n  JSONExtractUInt(get_methods, 'telemint_nft_item',\
+  \ 3, 'returns', 3) / 1e9 as max_bid,\n  content_uri,\n  updated_at\nFROM (\n  SELECT\
+  \ \n    address, \n    replaceRegexpAll(replaceOne(argMax(executed_get_methods,\
+  \ last_tx_lt), ',\"returns\":[{}]', ''), '\\d{20,100}', '1337') as get_methods,\
+  \ \n    any(content_uri) as content_uri,\n    max(last_tx_lt) as latest_tx_lt,\n\
+  \    argMax(updated_at, last_tx_lt) as updated_at\n  FROM account_states\n  WHERE\
+  \ hasAny(types, ['telemint_nft_item']) AND minter_address = unhex('000e41dc1dc3c9067ed24248580e12b3359818d83dee0304fabcf80845eafafdb2')\n\
+  \  GROUP BY address\n) as latest_nft_state\nWHERE beneficiary_address NOT IN ('NONE',\
+  \ 'EQCx_fHnK294Jwhu5ZVPCdl0TSWS86nMTGD3q8UN1vORAuUp', 'EQAOQdwdw8kGftJCSFgOErM1mBjYPe4DBPq8-AhF6vr9si5N')\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+uuid: f8673afc-4d5f-4845-bc27-34c39d12bbc9
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: initial_min_bid
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Float64
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: max_bid
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Float64
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: updated_at
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DateTime
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: beneficiary_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: nft_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: content_uri
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 7dedc5b6-fb1a-4fb7-9431-12dcf78336aa

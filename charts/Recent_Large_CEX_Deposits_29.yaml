@@ -1,0 +1,75 @@
+slice_name: Recent Large CEX Deposits
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 19__table
+  viz_type: table
+  slice_id: 29
+  query_mode: raw
+  groupby:
+  - src_address
+  - dst_address
+  - dst_label
+  - deposit_amount
+  - created_at
+  temporal_columns_lookup:
+    created_at: true
+  all_columns:
+  - created_at
+  - deposit_amount
+  - dst_label
+  - src_address
+  - dst_address
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_u872tm40x3i_v96yx1hnnc9
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: created_at
+  - clause: WHERE
+    comparator: null
+    datasourceWarning: false
+    expressionType: SQL
+    filterOptionName: filter_7keh75c9y6f_n21tall1jiq
+    isExtra: false
+    isNew: false
+    operator: null
+    sqlExpression: deposit_amount >= 10000
+    subject: null
+  - clause: WHERE
+    comparator: null
+    datasourceWarning: false
+    expressionType: SQL
+    filterOptionName: filter_gufzxqhghq_lmicgi2kmt
+    isExtra: false
+    isNew: false
+    operator: null
+    sqlExpression: src_label = ''
+    subject: null
+  order_by_cols:
+  - '["created_at", false]'
+  row_limit: 1000
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  page_length: 20
+  include_search: true
+  show_cell_bars: true
+  color_pn: true
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 1
+  - 2
+cache_timeout: null
+uuid: 8dac0226-3fdc-4eb7-8dec-86589d4b2389
+version: 1.0.0
+dataset_uuid: fdd9d9f9-b89a-495b-8125-b09922f110bc

@@ -1,0 +1,72 @@
+slice_name: Telegram Numbers Daily Unique Buyers And Sellers
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 41__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 45
+  x_axis: timestamp
+  time_grain_sqla: P1D
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: false
+    label: uniqExact(buyer_address)
+    optionName: metric_komhn1luf8_7sk9sc7xbg9
+    sqlExpression: uniqExact(buyer_address)
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: false
+    label: uniqExact(seller_address)
+    optionName: metric_cbmwwk08trw_b16gb8zzgp6
+    sqlExpression: uniqExact(seller_address)
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: timestamp
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  only_total: true
+  zoomable: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds:
+  - null
+  - null
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  granularity_sqla: timestamp
+  extra_form_data: {}
+  dashboards:
+  - 6
+cache_timeout: null
+uuid: 8397b391-db56-4ef6-8349-fc36913897ac
+version: 1.0.0
+dataset_uuid: 6e508860-be42-41bc-bd7e-85e671e8fd15
