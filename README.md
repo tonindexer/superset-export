@@ -1,2 +1,2 @@
 # superset-export
-Dashboards, charts, datasources and queries for Anton
+Dashboards and charts for [Anton](https://github.com/tonindexer/anton).
