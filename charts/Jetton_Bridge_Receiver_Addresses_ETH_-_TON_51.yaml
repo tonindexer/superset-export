@@ -1,0 +1,62 @@
+slice_name: Jetton Bridge Receiver Addresses, ETH -> TON
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 22__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 51
+  x_axis: created_at
+  time_grain_sqla: P1D
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: false
+    label: uniqExact(dst_address)
+    optionName: metric_pr3ry9bfar_utknhfabter
+    sqlExpression: uniqExact(dst_address)
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: created_at
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  only_total: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds:
+  - null
+  - null
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 6
+cache_timeout: null
+uuid: a9724525-a60b-4e9e-8aea-0feef177ce4b
+version: 1.0.0
+dataset_uuid: 62f6b110-3b98-4c0c-a826-7cd6c415b5d7

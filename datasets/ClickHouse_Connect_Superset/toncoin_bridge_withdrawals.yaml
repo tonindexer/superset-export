@@ -1,0 +1,81 @@
+table_name: toncoin_bridge_withdrawals
+main_dttm_col: created_at
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: null
+sql: "WITH \n  unhex('ffdd24c4a1f2b88f8b7053513b5cc6c5a31bc44b2a72dcb4d8c0338af0f0d37ec5')\
+  \ AS eth_ton_bridge,\n  unhex('ff4d5c0210b35daddaa219fac459dba0fdefb1fae4e97a0d0797739fe050d694ca')\
+  \ AS bsc_ton_bridge,\n  unhex('ff3b9bbfd0ad5338b9700f0833380ee17d463e51c1ae671ee6f08901bde899b202')\
+  \ AS eth_ton_bridge_gov,\n  unhex('ff0ebd7ff9ca70e06e9e22a8922f5ae75211a9d6a34a8094e8e1587b606bdbb662')\
+  \ AS bsc_ton_bridge_gov\n  \nSELECT \n  dst_address,\n  amount / 1e9 AS amount,\n\
+  \  if(src_address = eth_ton_bridge, 'ETH', 'BSC') as chain,\n  created_at\nFROM\
+  \ messages\nWHERE \n  type = 'INTERNAL' AND\n  src_address IN (eth_ton_bridge, bsc_ton_bridge)\
+  \ AND \n  amount != 0.1 AND \n  transfer_comment != 'OK'"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+uuid: edf60c45-6fdd-4f10-8f1c-79c1ca59c7b8
+metrics:
+- metric_name: count
+  verbose_name: null
+  metric_type: null
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: amount
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Float64
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: created_at
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DateTime
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: dst_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: chain
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 7dedc5b6-fb1a-4fb7-9431-12dcf78336aa

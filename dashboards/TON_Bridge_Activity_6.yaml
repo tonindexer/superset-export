@@ -1,0 +1,432 @@
+dashboard_title: TON Bridge Activity
+description: null
+css: ''
+slug: bridge
+uuid: 45c47075-6e11-4dde-9386-79254fe33108
+position:
+  CHART-explore-42-1:
+    children: []
+    id: CHART-explore-42-1
+    meta:
+      chartId: 42
+      height: 52
+      sliceName: Bridge Inflow (Volume)
+      sliceNameOverride: TON Bridge Inflow, TON -> ETH (Volume)
+      uuid: a35f8dd9-84d8-416d-98a0-d03cb9b4b34e
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-x1HvLK7_zY
+    type: CHART
+  CHART-explore-43-1:
+    children: []
+    id: CHART-explore-43-1
+    meta:
+      chartId: 43
+      height: 52
+      sliceName: Bridge Inflow (Count)
+      sliceNameOverride: TON Bridge Inflow, TON -> ETH (Count)
+      uuid: 3caef870-cfc6-404d-8edd-2a2696c2ba41
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-x1HvLK7_zY
+    type: CHART
+  CHART-explore-44-1:
+    children: []
+    id: CHART-explore-44-1
+    meta:
+      chartId: 44
+      height: 52
+      sliceName: Bridge Outflow (Volume)
+      sliceNameOverride: TON Bridge Outflow, ETH -> TON (Volume)
+      uuid: 250683d2-571d-4e4d-b6e1-7b89451fc651
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-jyt7Bhye
+    type: CHART
+  CHART-explore-45-1:
+    children: []
+    id: CHART-explore-45-1
+    meta:
+      chartId: 45
+      height: 52
+      sliceName: Bridge Outflow (Count)
+      sliceNameOverride: TON Bridge Outflow, ETH -> TON (Count)
+      uuid: b950c569-9af5-4725-a282-bd379e3a1a7b
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-jyt7Bhye
+    type: CHART
+  CHART-explore-46-1:
+    children: []
+    id: CHART-explore-46-1
+    meta:
+      chartId: 46
+      height: 52
+      sliceName: Bridge Depositing Addresses
+      sliceNameOverride: TON Bridge Depositing Addresses, TON -> ETH
+      uuid: 813d9bbb-8b2a-44b2-9543-883136059b3f
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-x1HvLK7_zY
+    type: CHART
+  CHART-explore-47-1:
+    children: []
+    id: CHART-explore-47-1
+    meta:
+      chartId: 47
+      height: 52
+      sliceName: Bridge Withdrawing Addresses
+      sliceNameOverride: TON Bridge Withdrawing Addresses, ETH -> TON
+      uuid: a426b639-9dd3-4c98-ad72-35cc13ff5201
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-jyt7Bhye
+    type: CHART
+  CHART-explore-48-1:
+    children: []
+    id: CHART-explore-48-1
+    meta:
+      chartId: 48
+      height: 50
+      sliceName: Jetton Bridge Outflow, TON -> ETH (Volume)
+      uuid: 84e6b431-6d3a-42df-a979-283cb2c94445
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-tLAs0117NR
+    type: CHART
+  CHART-explore-49-1:
+    children: []
+    id: CHART-explore-49-1
+    meta:
+      chartId: 49
+      height: 50
+      sliceName: Jetton Bridge Outflow, TON -> ETH (Count)
+      uuid: 7b34e0f2-1d16-40ce-abfe-41b82d8e0ff2
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-tLAs0117NR
+    type: CHART
+  CHART-explore-50-1:
+    children: []
+    id: CHART-explore-50-1
+    meta:
+      chartId: 50
+      height: 50
+      sliceName: Jetton Bridge Sender Addresses, TON -> ETH
+      uuid: b3798520-ec58-408d-b33e-6fee940e36ed
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-tLAs0117NR
+    type: CHART
+  CHART-explore-51-1:
+    children: []
+    id: CHART-explore-51-1
+    meta:
+      chartId: 51
+      height: 50
+      sliceName: Jetton Bridge Receiver Addresses, ETH -> TON
+      uuid: a9724525-a60b-4e9e-8aea-0feef177ce4b
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2KcKIVxIMi
+    type: CHART
+  CHART-explore-52-1:
+    children: []
+    id: CHART-explore-52-1
+    meta:
+      chartId: 52
+      height: 50
+      sliceName: Jetton Bridge Inflow, ETH -> TON (Count)
+      uuid: e0aa6bea-8b89-4caf-83cb-e50bc6250936
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2KcKIVxIMi
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  DIVIDER-IF0St8DJkk:
+    children: []
+    id: DIVIDER-IF0St8DJkk
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  GRID_ID:
+    children:
+    - ROW-x1HvLK7_zY
+    - ROW-N-jyt7Bhye
+    - DIVIDER-IF0St8DJkk
+    - ROW-tLAs0117NR
+    - ROW-2KcKIVxIMi
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: TON Bridge Activity
+    type: HEADER
+  MARKDOWN-_glTzA66rR:
+    children: []
+    id: MARKDOWN-_glTzA66rR
+    meta:
+      code: '
+
+        ### Jetton Bridge Inflow, TON -> ETH (Volume)
+
+
+        To be done ...'
+      height: 50
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2KcKIVxIMi
+    type: MARKDOWN
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-2KcKIVxIMi:
+    children:
+    - MARKDOWN-_glTzA66rR
+    - CHART-explore-52-1
+    - CHART-explore-51-1
+    id: ROW-2KcKIVxIMi
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-N-jyt7Bhye:
+    children:
+    - CHART-explore-44-1
+    - CHART-explore-45-1
+    - CHART-explore-47-1
+    id: ROW-N-jyt7Bhye
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-tLAs0117NR:
+    children:
+    - CHART-explore-48-1
+    - CHART-explore-49-1
+    - CHART-explore-50-1
+    id: ROW-tLAs0117NR
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-x1HvLK7_zY:
+    children:
+    - CHART-explore-42-1
+    - CHART-explore-43-1
+    - CHART-explore-46-1
+    id: ROW-x1HvLK7_zY
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '42':
+      id: 42
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 43
+        - 44
+        - 45
+        - 46
+        - 47
+    '43':
+      id: 43
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 42
+        - 44
+        - 45
+        - 46
+        - 47
+    '44':
+      id: 44
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 42
+        - 43
+        - 45
+        - 46
+        - 47
+    '45':
+      id: 45
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 42
+        - 43
+        - 44
+        - 46
+        - 47
+    '46':
+      id: 46
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 42
+        - 43
+        - 44
+        - 45
+        - 47
+    '47':
+      id: 47
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 42
+        - 43
+        - 44
+        - 45
+        - 46
+    '48':
+      id: 48
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 42
+        - 43
+        - 44
+        - 45
+        - 46
+        - 47
+    '49':
+      id: 49
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 42
+        - 43
+        - 44
+        - 45
+        - 46
+        - 47
+    '50':
+      id: 50
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 42
+        - 43
+        - 44
+        - 45
+        - 46
+        - 47
+    '51':
+      id: 51
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 42
+        - 43
+        - 44
+        - 45
+        - 46
+        - 47
+    '52':
+      id: 52
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 42
+        - 43
+        - 44
+        - 45
+        - 46
+        - 47
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+  color_scheme: supersetColors
+  refresh_frequency: 0
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  shared_label_colors:
+    uniqExact(sender): '#1FA8C9'
+    ETH: '#1FA8C9'
+    BSC: '#454E7C'
+    uniqExact(dst_address): '#1FA8C9'
+    jUSDT: '#1FA8C9'
+    jUSDC: '#454E7C'
+    jWBTC: '#5AC189'
+    jDAI: '#FF7F44'
+  color_scheme_domain:
+  - '#1FA8C9'
+  - '#454E7C'
+  - '#5AC189'
+  - '#FF7F44'
+  - '#666666'
+  - '#E04355'
+  - '#FCC700'
+  - '#A868B7'
+  - '#3CCCCB'
+  - '#A38F79'
+  - '#8FD3E4'
+  - '#A1A6BD'
+  - '#ACE1C4'
+  - '#FEC0A1'
+  - '#B2B2B2'
+  - '#EFA1AA'
+  - '#FDE380'
+  - '#D3B3DA'
+  - '#9EE5E5'
+  - '#D1C6BC'
+version: 1.0.0

@@ -1,0 +1,70 @@
+table_name: token_bridge_mint
+main_dttm_col: created_at
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: null
+sql: "WITH\n  unhex('00dc064187982e294dfdf8c771a6d395ef7a93b9c3ad0337167e5d3e08ebe5061b')\
+  \ as jWBTC_minter,\n  unhex('00729c13b6df2c07cbf0a06ab63d34af454f3d320ec1bcd8fb5c6d24d0806a17c2')\
+  \ as jUSDT_minter,\n  unhex('007e30fc2b7751ba58a3642f3fd59d5e96a810ddd78d8a310bfe8353bef10500df')\
+  \ as jUSDC_minter,\n  unhex('00e8fd927243f62a0730706d5a4c9a16e121d74ab513fdf47ba0649d78685b1cc6')\
+  \ as jDAI_minter\n\nSELECT\n  dst_address,\n  multiIf(\n    src_address == jWBTC_minter,\
+  \ 'jWBTC',\n    src_address == jUSDT_minter, 'jUSDT',\n    src_address == jUSDC_minter,\
+  \ 'jUSDC',\n    src_address == jDAI_minter, 'jDAI',\n    'unknown') as token,\n\
+  \  created_at\nFROM messages\nWHERE \n  operation_id = 395134233 AND\n  src_address\
+  \ IN (jWBTC_minter, jUSDT_minter, jUSDC_minter, jDAI_minter)"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+uuid: 62f6b110-3b98-4c0c-a826-7cd6c415b5d7
+metrics:
+- metric_name: count
+  verbose_name: null
+  metric_type: null
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: created_at
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DateTime
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: dst_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: token
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 7dedc5b6-fb1a-4fb7-9431-12dcf78336aa
