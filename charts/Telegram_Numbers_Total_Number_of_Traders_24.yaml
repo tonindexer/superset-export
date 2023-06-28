@@ -4,18 +4,18 @@ certified_by: null
 certification_details: null
 viz_type: big_number_total
 params:
-  datasource: 41__table
+  datasource: 28__table
   viz_type: big_number_total
-  slice_id: 46
+  slice_id: 24
   metric:
-    aggregate: null
-    column: null
-    datasourceWarning: false
     expressionType: SQL
+    sqlExpression: COUNT(DISTINCT trader_address)
+    column: null
+    aggregate: null
+    datasourceWarning: false
     hasCustomLabel: false
-    label: uniqExact(buyer_address, seller_address)
+    label: COUNT(DISTINCT trader_address)
     optionName: metric_j73ywkmtj1q_buzfvpqkare
-    sqlExpression: uniqExact(buyer_address, seller_address)
   adhoc_filters:
   - clause: WHERE
     comparator: No filter
@@ -26,11 +26,11 @@ params:
   subheader_font_size: 0.15
   y_axis_format: SMART_NUMBER
   time_format: smart_date
+  granularity_sqla: null
   extra_form_data: {}
   dashboards:
-  - 6
   - 3
 cache_timeout: null
 uuid: af045547-40e7-40cb-8caf-7437e557a640
 version: 1.0.0
-dataset_uuid: 6e508860-be42-41bc-bd7e-85e671e8fd15
+dataset_uuid: df5bac68-dc3f-4989-b595-8ebe9a6caabb

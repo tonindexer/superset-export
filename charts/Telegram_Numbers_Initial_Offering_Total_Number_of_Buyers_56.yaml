@@ -1,0 +1,49 @@
+slice_name: Telegram Numbers Initial Offering Total Number of Buyers
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 24__table
+  viz_type: big_number_total
+  metric:
+    expressionType: SQL
+    sqlExpression: COUNT(DISTINCT buyer_address)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: COUNT(DISTINCT buyer_address)
+    optionName: metric_9e061csky7h_wfyh41b61za
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: timestamp
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_uthsn19xxxd_r7zv8i8y2y
+  - expressionType: SQL
+    sqlExpression: sale_type = 'initial_offering'
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_j764gghzf3n_ofhp9lu2nfq
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 3
+cache_timeout: null
+uuid: be5bee85-ad0d-48fd-ae47-c6e0d89bb789
+version: 1.0.0
+dataset_uuid: 1f36fea2-0297-4b2b-ae89-e39679b4b81c

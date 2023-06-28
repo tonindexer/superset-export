@@ -1,0 +1,46 @@
+slice_name: Marketplace Addresses of Getgems Contracts
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 50__table
+  viz_type: table
+  slice_id: 59
+  query_mode: aggregate
+  groupby:
+  - marketplace_address
+  time_grain_sqla: P1D
+  temporal_columns_lookup:
+    updated_at: true
+  metrics:
+  - Sale Count
+  - Sale Volume
+  - Number of Traders
+  all_columns: []
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: updated_at
+  timeseries_limit_metric: count
+  order_by_cols: []
+  row_limit: 1000
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  show_cell_bars: true
+  color_pn: true
+  column_config:
+    marketplace_address:
+      truncateLongCells: false
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 5
+cache_timeout: null
+uuid: ae6dc1a2-af65-491d-b795-37a054fe8d27
+version: 1.0.0
+dataset_uuid: 14b0084a-854b-40e6-8de4-23816c732b5c

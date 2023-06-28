@@ -1,0 +1,177 @@
+table_name: getgems_contracts_sales
+main_dttm_col: updated_at
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: null
+sql: "SELECT \n  updated_at,\n  'fix_price' as sale_type,\n  messages.src_address\
+  \ as buyer_address,\n  (executed_get_methods -> account.types[1] -> 0 -> 'returns'\
+  \ ->> 6)::numeric / 1e9 as full_price,\n  (executed_get_methods -> account.types[1]\
+  \ -> 0 -> 'returns' ->> 1)::boolean as is_completed,\n  (executed_get_methods ->\
+  \ account.types[1] -> 0 -> 'returns' ->> 3)::text as marketplace_address,\n  (executed_get_methods\
+  \ -> account.types[1] -> 0 -> 'returns' ->> 4)::text as nft_address\n-- FROM latest_account_states\
+  \ as latest\n-- LEFT JOIN account_states as account ON latest.address = account.address\
+  \ AND latest.last_tx_lt = account.last_tx_lt\n-- INNER JOIN messages ON messages.dst_address\
+  \ = latest.address AND messages.dst_tx_lt = latest.last_tx_lt\nFROM account_states\
+  \ as account\nINNER JOIN messages ON messages.dst_address = account.address AND\
+  \ messages.dst_tx_lt = account.last_tx_lt\nINNER JOIN transactions ON transactions.in_msg_hash\
+  \ = messages.hash\nWHERE\n  (executed_get_methods -> account.types[1] -> 0 -> 'returns'\
+  \ ->> 1)::boolean = True\n  AND account.types && ARRAY['getgems_fix_price_sale_v2',\
+  \ 'getgems_fix_price_sale_v3', 'getgems_fix_price_sale_v3r2']\n  AND compute_phase_exit_code\
+  \ = 0\n  AND action_phase_result_code = 0\n  AND messages.operation_id IN (0, 2)\n\
+  \    \nUNION ALL\n\nSELECT \n  updated_at,\n  'auction' as sale_type,\n  substring(decode(translate((executed_get_methods\
+  \ -> account.types[1] -> 0 -> 'returns' ->> 7)::text, '-_', '+/'), 'base64'), 2,\
+  \ 33) as buyer_address,\n  (executed_get_methods -> account.types[1] -> 0 -> 'returns'\
+  \ ->> 6)::numeric / 1e9 as full_price,\n  (executed_get_methods -> account.types[1]\
+  \ -> 0 -> 'returns' ->> 1)::boolean as is_completed,\n  (executed_get_methods ->\
+  \ account.types[1] -> 0 -> 'returns' ->> 3)::text as marketplace_address,\n  (executed_get_methods\
+  \ -> account.types[1] -> 0 -> 'returns' ->> 4)::text as nft_address\nFROM account_states\
+  \ as account\n-- FROM latest_account_states as latest\n-- LEFT JOIN account_states\
+  \ as account ON latest.address = account.address AND latest.last_tx_lt = account.last_tx_lt\n\
+  WHERE \n  account.types && ARRAY['getgems_nft_auction', 'getgems_nft_auction_v2',\
+  \ 'getgems_nft_auction_v3r2']\n  AND (executed_get_methods -> account.types[1] ->\
+  \ 0 -> 'returns' ->> 1)::boolean = true\n  AND (executed_get_methods -> account.types[1]\
+  \ -> 0 -> 'returns' ->> 19)::boolean = false\n  AND (executed_get_methods -> account.types[1]\
+  \ -> 0 -> 'returns' ->> 6)::numeric > 0\n\nUNION ALL\n\nSELECT\n  updated_at,\n\
+  \  'offer' as sale_type,\n  substring(decode(translate((executed_get_methods ->\
+  \ account.types[1] -> 0 -> 'returns' ->> 6)::text, '-_', '+/'), 'base64'), 2, 33)\
+  \ as buyer_address,\n  (executed_get_methods -> account.types[1] -> 0 -> 'returns'\
+  \ ->> 7)::numeric / 1e9 as full_price,\n  (executed_get_methods -> account.types[1]\
+  \ -> 0 -> 'returns' ->> 1)::boolean as is_completed,\n  (executed_get_methods ->\
+  \ account.types[1] -> 0 -> 'returns' ->> 4)::text as marketplace_address,\n  (executed_get_methods\
+  \ -> account.types[1] -> 0 -> 'returns' ->> 5)::text as nft_address\nFROM account_states\
+  \ as account\nINNER JOIN messages ON messages.dst_address = account.address AND\
+  \ messages.dst_tx_lt = account.last_tx_lt\nWHERE\n  types && ARRAY['getgems_nft_offer']\n\
+  \  AND (executed_get_methods -> account.types[1] -> 0 -> 'returns' ->> 1)::boolean\
+  \ = true\n  AND operation_id = 85167505\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+uuid: 14b0084a-854b-40e6-8de4-23816c732b5c
+metrics:
+- metric_name: Number of Traders
+  verbose_name: ''
+  metric_type: null
+  expression: COUNT(DISTINCT buyer_address)
+  description: null
+  d3format: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+- metric_name: Sale Volume
+  verbose_name: ''
+  metric_type: null
+  expression: ROUND(SUM(full_price))
+  description: null
+  d3format: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+- metric_name: Sale Count
+  verbose_name: ''
+  metric_type: null
+  expression: COUNT(full_price)
+  description: null
+  d3format: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+- metric_name: count
+  verbose_name: null
+  metric_type: null
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: is_completed
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BOOLEAN
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: buyer_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BINARY
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: full_price
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: updated_at
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATETIME
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: marketplace_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: nft_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: sale_type
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+version: 1.0.0
+database_uuid: 59f15a57-d852-4882-b71c-b8f76577e6e2

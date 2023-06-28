@@ -1,5 +1,5 @@
-database_name: ClickHouse Connect (Superset)
-sqlalchemy_uri: clickhousedb+connect://superset:XXXXXXXXXX@clickhouse:8123/ton
+database_name: PostgreSQL
+sqlalchemy_uri: postgresql+psycopg2://superset:XXXXXXXXXX@postgres:5432/ton
 cache_timeout: null
 expose_in_sqllab: true
 allow_run_async: false
@@ -9,5 +9,5 @@ allow_dml: false
 allow_file_upload: false
 extra:
   allows_virtual_table_explore: true
-uuid: 7dedc5b6-fb1a-4fb7-9431-12dcf78336aa
+uuid: 59f15a57-d852-4882-b71c-b8f76577e6e2
 version: 1.0.0

@@ -1,27 +1,21 @@
-slice_name: Number of Getgems Traders
+slice_name: Getgems Sales (Count)
 description: null
 certified_by: null
 certification_details: null
 viz_type: echarts_timeseries_bar
 params:
-  datasource: 40__table
+  datasource: 50__table
   viz_type: echarts_timeseries_bar
-  slice_id: 40
+  slice_id: 30
   x_axis: updated_at
   time_grain_sqla: P1W
   x_axis_sort_asc: true
   x_axis_sort_series: name
   x_axis_sort_series_ascending: true
   metrics:
-  - aggregate: null
-    column: null
-    datasourceWarning: false
-    expressionType: SQL
-    hasCustomLabel: false
-    label: uniqExact(buyer_address)
-    optionName: metric_fc029xg6bq_a0rrvd3w9st
-    sqlExpression: uniqExact(buyer_address)
-  groupby: []
+  - count
+  groupby:
+  - sale_type
   adhoc_filters:
   - clause: WHERE
     comparator: No filter
@@ -42,6 +36,7 @@ params:
   y_axis_title_position: Left
   sort_series_type: sum
   color_scheme: supersetColors
+  stack: Stack
   only_total: true
   show_legend: true
   legendType: scroll
@@ -55,8 +50,9 @@ params:
   tooltipTimeFormat: smart_date
   extra_form_data: {}
   dashboards:
+  - 5
   - 3
 cache_timeout: null
-uuid: 45e64163-4a8e-4c84-a3c4-95a97acb7c96
+uuid: 3b0ed148-7e8a-4a6b-853f-cda8691035ea
 version: 1.0.0
-dataset_uuid: c63eba40-4891-4891-b6b9-58da58538e56
+dataset_uuid: 14b0084a-854b-40e6-8de4-23816c732b5c

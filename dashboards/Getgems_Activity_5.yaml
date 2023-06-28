@@ -1,28 +1,14 @@
-dashboard_title: TON NFT Activity
+dashboard_title: Getgems Activity
 description: null
 css: ''
-slug: nft
+slug: getgems
 uuid: 3f38ea18-ca97-4566-9df1-bb197e02958d
 position:
-  CHART-AMfugmAvNc:
-    children: []
-    id: CHART-AMfugmAvNc
-    meta:
-      chartId: 35
-      height: 50
-      sliceName: Number of NFT Item Transfers
-      uuid: 2f5f225e-7322-4c18-80cd-4ecdc6639dd1
-      width: 6
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - ROW-psWR5r6vi2
-    type: CHART
   CHART-explore-40-1:
     children: []
     id: CHART-explore-40-1
     meta:
-      chartId: 40
+      chartId: 7
       height: 50
       sliceName: Number of Getgems Traders
       uuid: 45e64163-4a8e-4c84-a3c4-95a97acb7c96
@@ -36,7 +22,7 @@ position:
     children: []
     id: CHART-explore-49-1
     meta:
-      chartId: 49
+      chartId: 34
       height: 50
       sliceName: Total Number of Getgems Traders
       uuid: 375b8e95-a2fd-4f38-9eb9-19eb91cd70d3
@@ -45,12 +31,13 @@ position:
     - ROOT_ID
     - GRID_ID
     - ROW-Yc9utCbE-
+    - COLUMN-GaoEgYglJ8
     type: CHART
   CHART-explore-50-1:
     children: []
     id: CHART-explore-50-1
     meta:
-      chartId: 50
+      chartId: 4
       height: 50
       sliceName: Getgems Sales (Volume)
       uuid: 41d54cbf-c94c-4036-981e-69575ab2d33c
@@ -64,7 +51,7 @@ position:
     children: []
     id: CHART-explore-51-1
     meta:
-      chartId: 51
+      chartId: 30
       height: 50
       sliceName: Getgems Sales (Count)
       uuid: 3b0ed148-7e8a-4a6b-853f-cda8691035ea
@@ -78,7 +65,7 @@ position:
     children: []
     id: CHART-explore-52-1
     meta:
-      chartId: 52
+      chartId: 2
       height: 50
       sliceName: Total Getgems Sales Volume
       uuid: f724e9a8-73e9-4c79-b64e-3820918b9fe3
@@ -88,24 +75,37 @@ position:
     - GRID_ID
     - ROW-Yc9utCbE-
     type: CHART
-  CHART-w8iK2mHr0l:
+  CHART-explore-59-1:
     children: []
-    id: CHART-w8iK2mHr0l
+    id: CHART-explore-59-1
     meta:
-      chartId: 31
+      chartId: 59
       height: 50
-      sliceName: Number of Active NFT Items
-      uuid: c4d32eb2-8d56-4a50-8734-edb638fe3b7b
-      width: 6
+      sliceName: Marketplace Addresses of Getgems Contracts
+      sliceNameOverride: Marketplace Addresses of Getgems Contracts
+      uuid: ae6dc1a2-af65-491d-b795-37a054fe8d27
+      width: 9
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-psWR5r6vi2
+    - ROW-88eEmS9d2a
     type: CHART
+  COLUMN-GaoEgYglJ8:
+    children:
+    - CHART-explore-49-1
+    id: COLUMN-GaoEgYglJ8
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Yc9utCbE-
+    type: COLUMN
   DASHBOARD_VERSION_KEY: v2
   GRID_ID:
     children:
-    - ROW-psWR5r6vi2
+    - ROW-88eEmS9d2a
     - ROW-Fu_EyopTk2
     - ROW-Yc9utCbE-
     id: GRID_ID
@@ -115,13 +115,48 @@ position:
   HEADER_ID:
     id: HEADER_ID
     meta:
-      text: TON NFT Activity
+      text: Getgems Activity
     type: HEADER
+  MARKDOWN-9L5tproN6R:
+    children: []
+    id: MARKDOWN-9L5tproN6R
+    meta:
+      code: '## Disclaimer
+
+
+        Note, that this dashboard caclulates statistics not only for Getgems marketplace,
+        but for all Getgems contracts, found in the network.
+
+
+        https://getgems.io
+
+        EQBYTuYbLf8INxFtD8tQeNk5ZLy-nAX9ahQbG_yl1qQ-GEMS
+
+
+        '
+      height: 50
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-88eEmS9d2a
+    type: MARKDOWN
   ROOT_ID:
     children:
     - GRID_ID
     id: ROOT_ID
     type: ROOT
+  ROW-88eEmS9d2a:
+    children:
+    - MARKDOWN-9L5tproN6R
+    - CHART-explore-59-1
+    id: ROW-88eEmS9d2a
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
   ROW-Fu_EyopTk2:
     children:
     - CHART-explore-50-1
@@ -137,7 +172,7 @@ position:
   ROW-Yc9utCbE-:
     children:
     - CHART-explore-40-1
-    - CHART-explore-49-1
+    - COLUMN-GaoEgYglJ8
     - CHART-explore-52-1
     id: ROW-Yc9utCbE-
     meta:
@@ -147,41 +182,25 @@ position:
     - ROOT_ID
     - GRID_ID
     type: ROW
-  ROW-psWR5r6vi2:
-    children:
-    - CHART-w8iK2mHr0l
-    - CHART-AMfugmAvNc
-    id: ROW-psWR5r6vi2
-    meta:
-      background: BACKGROUND_TRANSPARENT
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    type: ROW
 metadata:
   chart_configuration:
-    '31':
-      id: 31
+    '4':
+      id: 4
       crossFilters:
         scope: global
         chartsInScope: []
-    '35':
-      id: 35
+    '7':
+      id: 7
       crossFilters:
         scope: global
         chartsInScope: []
-    '40':
-      id: 40
+    '30':
+      id: 30
       crossFilters:
         scope: global
         chartsInScope: []
-    '50':
-      id: 50
-      crossFilters:
-        scope: global
-        chartsInScope: []
-    '51':
-      id: 51
+    '59':
+      id: 59
       crossFilters:
         scope: global
         chartsInScope: []
@@ -199,18 +218,10 @@ metadata:
   cross_filters_enabled: true
   default_filters: '{}'
   shared_label_colors:
-    count: '#1FA8C9'
-    '["nft_item"]': '#1FA8C9'
-    '["telemint_nft_item", "nft_item", "nft_royalty"]': '#454E7C'
-    '["telemint_nft_item", "nft_item", "nft_royalty", "dns_resolver"]': '#5AC189'
-    '["nft_item", "nft_editable"]': '#FF7F44'
-    '["nft_item", "nft_editable", "dns_resolver", "dns_nft_item"]': '#666666'
-    '["nft_item", "nft_royalty", "nft_editable"]': '#E04355'
-    '["nft_item", "nft_item_sbt"]': '#FCC700'
-    '["nft_item", "nft_editable", "dns_resolver"]': '#A868B7'
-    '["nft_item", "nft_editable", "nft_item_sbt"]': '#3CCCCB'
-    '["telemint_nft_item", "nft_item"]': '#A38F79'
-    '["nft_item", "nft_royalty", "dns_resolver"]': '#8FD3E4'
+    fix_price: '#1FA8C9'
+    auction: '#454E7C'
+    offer: '#5AC189'
+    COUNT(DISTINCT buyer_address): '#1FA8C9'
   color_scheme_domain:
   - '#1FA8C9'
   - '#454E7C'

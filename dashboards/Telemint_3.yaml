@@ -1,0 +1,420 @@
+dashboard_title: Telemint
+description: null
+css: ''
+slug: telemint
+uuid: f7bd3345-a404-42d6-bb40-9b51c6a55750
+position:
+  CHART-explore-41-1:
+    children: []
+    id: CHART-explore-41-1
+    meta:
+      chartId: 10
+      height: 50
+      sliceName: Telegram Numbers On Sale
+      uuid: 31b6647b-68ca-4e78-826a-d230d7dae222
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-hEGlwizob
+    type: CHART
+  CHART-explore-42-1:
+    children: []
+    id: CHART-explore-42-1
+    meta:
+      chartId: 6
+      height: 50
+      sliceName: Telegram Numbers Daily Average Sale Price
+      uuid: 5a601e22-478c-4406-a7c7-6c4b50c0aae1
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-hEGlwizob
+    type: CHART
+  CHART-explore-43-1:
+    children: []
+    id: CHART-explore-43-1
+    meta:
+      chartId: 32
+      height: 50
+      sliceName: Telegram Numbers Daily Sale Volume
+      uuid: 947114a0-e4d2-461a-874f-d899aa68f998
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-p8E9jz0CEf
+    type: CHART
+  CHART-explore-44-1:
+    children: []
+    id: CHART-explore-44-1
+    meta:
+      chartId: 11
+      height: 50
+      sliceName: Telegram Numbers Daily Sales Count
+      uuid: a58011ab-e678-4ca6-a5ae-18330cf81d42
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-p8E9jz0CEf
+    type: CHART
+  CHART-explore-45-1:
+    children: []
+    id: CHART-explore-45-1
+    meta:
+      chartId: 31
+      height: 50
+      sliceName: Telegram Numbers Daily Active Buyers And Sellers
+      sliceNameOverride: Telegram Numbers Daily Active Buyers And Sellers
+      uuid: 8397b391-db56-4ef6-8349-fc36913897ac
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z30pal2_ue
+    - COLUMN--aAGLd4maj
+    type: CHART
+  CHART-explore-46-1:
+    children: []
+    id: CHART-explore-46-1
+    meta:
+      chartId: 24
+      height: 24
+      sliceName: Telegram Numbers Total Number of Traders
+      uuid: af045547-40e7-40cb-8caf-7437e557a640
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z30pal2_ue
+    - COLUMN-JBurp2TC-u
+    type: CHART
+  CHART-explore-53-1:
+    children: []
+    id: CHART-explore-53-1
+    meta:
+      chartId: 53
+      height: 50
+      sliceName: Top Telegram Numbers Traders
+      sliceNameOverride: Telegram Numbers TOP Traders
+      uuid: 12cc41db-a3c7-426b-9160-a658c4a91073
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Zy2A4HiZ4
+    type: CHART
+  CHART-explore-54-1:
+    children: []
+    id: CHART-explore-54-1
+    meta:
+      chartId: 54
+      height: 24
+      sliceName: Telegram Numbers Initial Offering Total Sale Volume
+      sliceNameOverride: Telegram Numbers Initial Offering Total Sale Volume
+      uuid: 958abd40-fe9f-48a1-b1da-f9bda9beddd4
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z30pal2_ue
+    - COLUMN-OTOVF3a7eP
+    type: CHART
+  CHART-explore-55-1:
+    children: []
+    id: CHART-explore-55-1
+    meta:
+      chartId: 55
+      height: 24
+      sliceName: Telegram Numbers Secondary Sale Total Volume (through Fragment)
+      uuid: 0d369810-21f0-4e5e-bbc6-dd4c1e4d5ad9
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z30pal2_ue
+    - COLUMN-OTOVF3a7eP
+    type: CHART
+  CHART-explore-56-1:
+    children: []
+    id: CHART-explore-56-1
+    meta:
+      chartId: 56
+      height: 24
+      sliceName: Telegram Numbers Initial Offering Total Number of Buyers
+      uuid: be5bee85-ad0d-48fd-ae47-c6e0d89bb789
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z30pal2_ue
+    - COLUMN-JBurp2TC-u
+    type: CHART
+  CHART-explore-57-1:
+    children: []
+    id: CHART-explore-57-1
+    meta:
+      chartId: 57
+      height: 50
+      sliceName: Telegram Usernames Daily Sale Count
+      sliceNameOverride: Telegram Usernames Daily Sale Count
+      uuid: db6e94d0-5496-48d5-ac0e-0afda63a99dd
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-_9SErt8lf
+    type: CHART
+  CHART-explore-58-1:
+    children: []
+    id: CHART-explore-58-1
+    meta:
+      chartId: 58
+      height: 50
+      sliceName: Telegram Usernames Daily Sale Volume
+      uuid: d6b914e7-9b60-49f3-8c08-f99a3f505a3b
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-_9SErt8lf
+    type: CHART
+  COLUMN--aAGLd4maj:
+    children:
+    - CHART-explore-45-1
+    id: COLUMN--aAGLd4maj
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z30pal2_ue
+    type: COLUMN
+  COLUMN-JBurp2TC-u:
+    children:
+    - CHART-explore-56-1
+    - CHART-explore-46-1
+    id: COLUMN-JBurp2TC-u
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z30pal2_ue
+    type: COLUMN
+  COLUMN-OTOVF3a7eP:
+    children:
+    - CHART-explore-54-1
+    - CHART-explore-55-1
+    id: COLUMN-OTOVF3a7eP
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z30pal2_ue
+    type: COLUMN
+  DASHBOARD_VERSION_KEY: v2
+  DIVIDER-gQNcwrZ19J:
+    children: []
+    id: DIVIDER-gQNcwrZ19J
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  DIVIDER-p_yt09JfSv:
+    children: []
+    id: DIVIDER-p_yt09JfSv
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  GRID_ID:
+    children:
+    - ROW-hEGlwizob
+    - ROW-p8E9jz0CEf
+    - ROW-z30pal2_ue
+    - DIVIDER-gQNcwrZ19J
+    - ROW-_9SErt8lf
+    - DIVIDER-p_yt09JfSv
+    - ROW-Zy2A4HiZ4
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Telemint
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-Zy2A4HiZ4:
+    children:
+    - CHART-explore-53-1
+    id: ROW-Zy2A4HiZ4
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-_9SErt8lf:
+    children:
+    - CHART-explore-58-1
+    - CHART-explore-57-1
+    id: ROW-_9SErt8lf
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-hEGlwizob:
+    children:
+    - CHART-explore-41-1
+    - CHART-explore-42-1
+    id: ROW-hEGlwizob
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-p8E9jz0CEf:
+    children:
+    - CHART-explore-43-1
+    - CHART-explore-44-1
+    id: ROW-p8E9jz0CEf
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-z30pal2_ue:
+    children:
+    - COLUMN--aAGLd4maj
+    - COLUMN-OTOVF3a7eP
+    - COLUMN-JBurp2TC-u
+    id: ROW-z30pal2_ue
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '6':
+      id: 6
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 41
+        - 42
+    '10':
+      id: 10
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 41
+        - 42
+    '11':
+      id: 11
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 41
+        - 42
+    '31':
+      id: 31
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 41
+        - 42
+    '32':
+      id: 32
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 41
+        - 42
+    '53':
+      id: 53
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 41
+        - 42
+    '57':
+      id: 57
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 41
+        - 42
+    '58':
+      id: 58
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 41
+        - 42
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 41
+    - 42
+  color_scheme: supersetColors
+  refresh_frequency: 0
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  shared_label_colors:
+    count: '#1FA8C9'
+    AVG(sale_price): '#1FA8C9'
+    initial_offering: '#1FA8C9'
+    secondary_sale: '#454E7C'
+    COUNT(DISTINCT buyer_address): '#1FA8C9'
+    COUNT(DISTINCT seller_address): '#454E7C'
+  color_scheme_domain:
+  - '#1FA8C9'
+  - '#454E7C'
+  - '#5AC189'
+  - '#FF7F44'
+  - '#666666'
+  - '#E04355'
+  - '#FCC700'
+  - '#A868B7'
+  - '#3CCCCB'
+  - '#A38F79'
+  - '#8FD3E4'
+  - '#A1A6BD'
+  - '#ACE1C4'
+  - '#FEC0A1'
+  - '#B2B2B2'
+  - '#EFA1AA'
+  - '#FDE380'
+  - '#D3B3DA'
+  - '#9EE5E5'
+  - '#D1C6BC'
+version: 1.0.0
