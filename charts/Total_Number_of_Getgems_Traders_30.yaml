@@ -1,0 +1,61 @@
+slice_name: Total Number of Getgems Traders
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 26__table
+  viz_type: big_number_total
+  slice_id: 30
+  metric:
+    aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: false
+    label: COUNT(DISTINCT seller_address)
+    optionName: metric_zqhlpeyfi4l_cee9tksm2qt
+    sqlExpression: COUNT(DISTINCT seller_address)
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_rqkyon5utir_0gmlj2o1ryz
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: created_at
+  - clause: WHERE
+    comparator: null
+    datasourceWarning: false
+    expressionType: SQL
+    filterOptionName: filter_z1jhlfotiu7_qrepqqvzdnn
+    isExtra: false
+    isNew: false
+    operator: null
+    sqlExpression: marketplace_address = decode('00584ee61b2dff0837116d0fcb5078d93964bcbe9c05fd6a141b1bfca5d6a43e18',
+      'hex')
+    subject: null
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 3
+query_context: '{"datasource":{"id":26,"type":"table"},"force":false,"queries":[{"filters":[{"col":"created_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":"(marketplace_address = decode(''00584ee61b2dff0837116d0fcb5078d93964bcbe9c05fd6a141b1bfca5d6a43e18'',
+  ''hex''))"},"applied_time_extras":{},"columns":[],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"COUNT(DISTINCT
+  seller_address)","optionName":"metric_zqhlpeyfi4l_cee9tksm2qt","sqlExpression":"COUNT(DISTINCT
+  seller_address)"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"26__table","viz_type":"big_number_total","slice_id":30,"metric":{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"COUNT(DISTINCT
+  seller_address)","optionName":"metric_zqhlpeyfi4l_cee9tksm2qt","sqlExpression":"COUNT(DISTINCT
+  seller_address)"},"adhoc_filters":[{"clause":"WHERE","comparator":"No filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_rqkyon5utir_0gmlj2o1ryz","isExtra":false,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"created_at"},{"clause":"WHERE","comparator":null,"datasourceWarning":false,"expressionType":"SQL","filterOptionName":"filter_z1jhlfotiu7_qrepqqvzdnn","isExtra":false,"isNew":false,"operator":null,"sqlExpression":"marketplace_address
+  = decode(''00584ee61b2dff0837116d0fcb5078d93964bcbe9c05fd6a141b1bfca5d6a43e18'',
+  ''hex'')","subject":null}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","conditional_formatting":[],"extra_form_data":{},"dashboards":[3],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 375b8e95-a2fd-4f38-9eb9-19eb91cd70d3
+version: 1.0.0
+dataset_uuid: c00d9ff2-9c37-48f6-b57a-57cc0fa7c93c

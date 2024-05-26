@@ -1,0 +1,76 @@
+slice_name: CEX Withdrawals
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_area
+params:
+  datasource: 17__table
+  viz_type: echarts_area
+  slice_id: 28
+  x_axis: created_at
+  time_grain_sqla: P1D
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - count
+  groupby:
+  - src_label
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: created_at
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_a3n6sv5mi7c_q5i7730ot1
+  - expressionType: SQL
+    sqlExpression: dst_label = ''
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_dcocd56h5iq_eivx0n17b2n
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  seriesType: line
+  opacity: 0.2
+  only_total: true
+  markerSize: 6
+  zoomable: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds:
+  - null
+  - null
+  granularity_sqla: created_at
+  extra_form_data: {}
+  dashboards:
+  - 2
+query_context: null
+cache_timeout: null
+uuid: 1b6fa89d-492d-4258-a09a-af17fb05c8ab
+version: 1.0.0
+dataset_uuid: 1edc0a6f-bdf4-4854-8265-7fbfe086df0b

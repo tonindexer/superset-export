@@ -1,0 +1,84 @@
+slice_name: Telegram Numbers Secondary Sale Total Volume (through Fragment)
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 23__table
+  viz_type: big_number_total
+  slice_id: 35
+  metric:
+    aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: false
+    label: SUM(sale_price / 1e9)
+    optionName: metric_37hpghksw05_fuxsfflq24h
+    sqlExpression: SUM(sale_price / 1e9)
+  adhoc_filters:
+  - expressionType: SQL
+    sqlExpression: sale_type = 'secondary_sale'
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_i09z3q689je_flgrcp2zt3e
+  - expressionType: SIMPLE
+    subject: created_at
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_r48m5xin03_l19evowgfsl
+  - expressionType: SQL
+    sqlExpression: fake_item = false
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_3d988jbldeo_g2gplvpryw
+  - expressionType: SQL
+    sqlExpression: minter_address = decode('000E41DC1DC3C9067ED24248580E12B3359818D83DEE0304FABCF80845EAFAFDB2',
+      'hex')
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_vmyddzxwl9_emfhdkehl46
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 4
+query_context: '{"datasource":{"id":23,"type":"table"},"force":false,"queries":[{"filters":[{"col":"created_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":"(sale_type = ''secondary_sale'') AND (fake_item
+  = false) AND (minter_address = decode(''000E41DC1DC3C9067ED24248580E12B3359818D83DEE0304FABCF80845EAFAFDB2'',
+  ''hex''))"},"applied_time_extras":{},"columns":[],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"SUM(sale_price
+  / 1e9)","optionName":"metric_37hpghksw05_fuxsfflq24h","sqlExpression":"SUM(sale_price
+  / 1e9)"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"23__table","viz_type":"big_number_total","slice_id":35,"metric":{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"SUM(sale_price
+  / 1e9)","optionName":"metric_37hpghksw05_fuxsfflq24h","sqlExpression":"SUM(sale_price
+  / 1e9)"},"adhoc_filters":[{"expressionType":"SQL","sqlExpression":"sale_type = ''secondary_sale''","clause":"WHERE","subject":null,"operator":null,"comparator":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_i09z3q689je_flgrcp2zt3e"},{"expressionType":"SIMPLE","subject":"created_at","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_r48m5xin03_l19evowgfsl"},{"expressionType":"SQL","sqlExpression":"fake_item
+  = false","clause":"WHERE","subject":null,"operator":null,"comparator":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_3d988jbldeo_g2gplvpryw"},{"expressionType":"SQL","sqlExpression":"minter_address
+  = decode(''000E41DC1DC3C9067ED24248580E12B3359818D83DEE0304FABCF80845EAFAFDB2'',
+  ''hex'')","clause":"WHERE","subject":null,"operator":null,"comparator":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_vmyddzxwl9_emfhdkehl46"}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","conditional_formatting":[],"extra_form_data":{},"dashboards":[4],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 190088c3-0512-4fd7-b2ae-98387d2b3679
+version: 1.0.0
+dataset_uuid: 490b5032-9232-4ff0-8ca9-3c98c4b01557

@@ -1,0 +1,108 @@
+slice_name: Telegram Numbers Daily Sale Volume
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 23__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 28
+  x_axis: created_at
+  time_grain_sqla: P1D
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: false
+    label: SUM(sale_price / 1e9)
+    optionName: metric_0ktou0vcqik_n5ftn2cuu6
+    sqlExpression: SUM(sale_price / 1e9)
+  groupby:
+  - sale_type
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: created_at
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_nh60sxiwsv8_rbdv8xqdxqi
+  - expressionType: SQL
+    sqlExpression: fake_item = false
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_w88q4qznca_85ftpiqzoyc
+  - expressionType: SQL
+    sqlExpression: minter_address = decode('000e41dc1dc3c9067ed24248580e12b3359818d83dee0304fabcf80845eafafdb2',
+      'hex')
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_f5fxxuvvzra_bnyb6wb8qgi
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  stack: Stack
+  only_total: true
+  zoomable: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  y_axis_format: SMART_NUMBER
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 4
+query_context: '{"datasource":{"id":23,"type":"table"},"force":false,"queries":[{"filters":[{"col":"created_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":"(fake_item = false)
+  AND (minter_address = decode(''000e41dc1dc3c9067ed24248580e12b3359818d83dee0304fabcf80845eafafdb2'',
+  ''hex''))"},"applied_time_extras":{},"columns":[{"timeGrain":"P1D","columnType":"BASE_AXIS","sqlExpression":"created_at","label":"created_at","expressionType":"SQL"},"sale_type"],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"SUM(sale_price
+  / 1e9)","optionName":"metric_0ktou0vcqik_n5ftn2cuu6","sqlExpression":"SUM(sale_price
+  / 1e9)"}],"orderby":[[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"SUM(sale_price
+  / 1e9)","optionName":"metric_0ktou0vcqik_n5ftn2cuu6","sqlExpression":"SUM(sale_price
+  / 1e9)"},false]],"annotation_layers":[],"row_limit":10000,"series_columns":["sale_type"],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["created_at"],"columns":["sale_type"],"aggregates":{"SUM(sale_price
+  / 1e9)":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"rename","options":{"columns":{"SUM(sale_price
+  / 1e9)":null},"level":0,"inplace":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"23__table","viz_type":"echarts_timeseries_bar","slice_id":28,"x_axis":"created_at","time_grain_sqla":"P1D","x_axis_sort_asc":true,"x_axis_sort_series":"name","x_axis_sort_series_ascending":true,"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"SUM(sale_price
+  / 1e9)","optionName":"metric_0ktou0vcqik_n5ftn2cuu6","sqlExpression":"SUM(sale_price
+  / 1e9)"}],"groupby":["sale_type"],"adhoc_filters":[{"expressionType":"SIMPLE","subject":"created_at","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_nh60sxiwsv8_rbdv8xqdxqi"},{"expressionType":"SQL","sqlExpression":"fake_item
+  = false","clause":"WHERE","subject":null,"operator":null,"comparator":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_w88q4qznca_85ftpiqzoyc"},{"expressionType":"SQL","sqlExpression":"minter_address
+  = decode(''000e41dc1dc3c9067ed24248580e12b3359818d83dee0304fabcf80845eafafdb2'',
+  ''hex'')","clause":"WHERE","subject":null,"operator":null,"comparator":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_f5fxxuvvzra_bnyb6wb8qgi"}],"order_desc":true,"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"orientation":"vertical","x_axis_title_margin":15,"y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","stack":"Stack","only_total":true,"zoomable":true,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","y_axis_format":"SMART_NUMBER","truncateXAxis":true,"y_axis_bounds":[null,null],"rich_tooltip":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[4],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 947114a0-e4d2-461a-874f-d899aa68f998
+version: 1.0.0
+dataset_uuid: 490b5032-9232-4ff0-8ca9-3c98c4b01557

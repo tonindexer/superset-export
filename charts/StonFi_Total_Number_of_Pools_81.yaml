@@ -1,0 +1,41 @@
+slice_name: StonFi Total Number of Pools
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 30__table
+  viz_type: big_number_total
+  metric:
+    expressionType: SQL
+    sqlExpression: count(DISTINCT pool_address)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: count(DISTINCT pool_address)
+    optionName: metric_yus5w9xpfa_mm8lt8wilt
+  adhoc_filters:
+  - clause: WHERE
+    subject: created_at
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 7
+query_context: '{"datasource":{"id":30,"type":"table"},"force":false,"queries":[{"filters":[{"col":"created_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"count(DISTINCT
+  pool_address)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"count(DISTINCT
+  pool_address)","optionName":"metric_yus5w9xpfa_mm8lt8wilt"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"30__table","viz_type":"big_number_total","metric":{"expressionType":"SQL","sqlExpression":"count(DISTINCT
+  pool_address)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"count(DISTINCT
+  pool_address)","optionName":"metric_yus5w9xpfa_mm8lt8wilt"},"adhoc_filters":[{"clause":"WHERE","subject":"created_at","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","extra_form_data":{},"dashboards":[7],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 377ca95e-0607-462b-b675-6203355fb2f9
+version: 1.0.0
+dataset_uuid: 06be013b-d654-48c0-90a2-aa053767b5ed

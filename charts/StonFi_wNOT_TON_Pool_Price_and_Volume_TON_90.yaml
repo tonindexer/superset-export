@@ -1,0 +1,163 @@
+slice_name: StonFi wNOT / TON Pool Price and Volume (TON)
+description: null
+certified_by: null
+certification_details: null
+viz_type: mixed_timeseries
+params:
+  datasource: 41__table
+  viz_type: mixed_timeseries
+  slice_id: 90
+  x_axis: created_at
+  time_grain_sqla: P1D
+  metrics:
+  - expressionType: SQL
+    sqlExpression: AVG(asset_0_amount / (asset_1_amount / 1e3))
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: Average Price
+    optionName: metric_sujg6dgq9r_hcsg8buyz6c
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_djspg0w6y2i_5p5hox0tryp
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: created_at
+  - clause: WHERE
+    comparator: null
+    datasourceWarning: false
+    expressionType: SQL
+    filterOptionName: filter_p6bcsvk3ye_d4zqqc8f04w
+    isExtra: false
+    isNew: false
+    operator: null
+    sqlExpression: pool_address = decode('007194e867aed719e1d45246c0b8facb07bdcba1cef2d5199ffac24531e3ad73a9',
+      'hex')
+    subject: null
+  - clause: WHERE
+    comparator: null
+    datasourceWarning: false
+    expressionType: SQL
+    filterOptionName: filter_jeyjcs4d63_2zbhiv9ulg
+    isExtra: false
+    isNew: false
+    operator: null
+    sqlExpression: operation_type = 'swap'
+    subject: null
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  comparison_type: values
+  metrics_b:
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: Volume
+    optionName: metric_icmvor8oqp_v6vbzyi1kn
+    sqlExpression: SUM(asset_0_amount / 1e9)
+  groupby_b: []
+  adhoc_filters_b:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_vtufg0uq9an_dz1b1itznp
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: created_at
+  - clause: WHERE
+    comparator: null
+    datasourceWarning: false
+    expressionType: SQL
+    filterOptionName: filter_19amu41v9s5_pcc2p382fk
+    isExtra: false
+    isNew: false
+    operator: null
+    sqlExpression: pool_address = decode('007194e867aed719e1d45246c0b8facb07bdcba1cef2d5199ffac24531e3ad73a9',
+      'hex')
+    subject: null
+  - clause: WHERE
+    comparator: null
+    datasourceWarning: false
+    expressionType: SQL
+    filterOptionName: filter_304ad2ch2c_sb6ty146ir8
+    isExtra: false
+    isNew: false
+    operator: null
+    sqlExpression: operation_type = 'swap'
+    subject: null
+  order_desc_b: true
+  row_limit_b: 10000
+  truncate_metric_b: true
+  comparison_type_b: values
+  annotation_layers: []
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  color_scheme: supersetColors
+  seriesType: smooth
+  area: true
+  opacity: 0.1
+  markerSize: 6
+  yAxisIndex: 0
+  seriesTypeB: bar
+  opacityB: 0.1
+  markerSizeB: 6
+  yAxisIndexB: 1
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  truncateXAxis: false
+  xAxisBounds:
+  - null
+  - null
+  truncateYAxis: true
+  y_axis_bounds:
+  - null
+  - 0.002
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds_secondary:
+  - 0
+  - 2000000
+  y_axis_format_secondary: SMART_NUMBER
+  extra_form_data: {}
+  dashboards:
+  - 14
+query_context: '{"datasource":{"id":41,"type":"table"},"force":false,"queries":[{"filters":[{"col":"created_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":"(pool_address =
+  decode(''007194e867aed719e1d45246c0b8facb07bdcba1cef2d5199ffac24531e3ad73a9'', ''hex''))
+  AND (operation_type = ''swap'')"},"applied_time_extras":{},"columns":[{"timeGrain":"P1D","columnType":"BASE_AXIS","sqlExpression":"created_at","label":"created_at","expressionType":"SQL"}],"metrics":[{"expressionType":"SQL","sqlExpression":"AVG(asset_0_amount
+  / (asset_1_amount / 1e3))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Average
+  Price","optionName":"metric_sujg6dgq9r_hcsg8buyz6c"}],"annotation_layers":[],"row_limit":10000,"series_columns":[],"series_limit":0,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["created_at"],"columns":[],"aggregates":{"Average
+  Price":{"operator":"mean"}},"drop_missing_columns":true}},{"operation":"flatten"}],"orderby":[[{"expressionType":"SQL","sqlExpression":"AVG(asset_0_amount
+  / (asset_1_amount / 1e3))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Average
+  Price","optionName":"metric_sujg6dgq9r_hcsg8buyz6c"},false]]},{"filters":[{"col":"created_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":"(pool_address =
+  decode(''007194e867aed719e1d45246c0b8facb07bdcba1cef2d5199ffac24531e3ad73a9'', ''hex''))
+  AND (operation_type = ''swap'')"},"applied_time_extras":{},"columns":[{"timeGrain":"P1D","columnType":"BASE_AXIS","sqlExpression":"created_at","label":"created_at","expressionType":"SQL"}],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Volume","optionName":"metric_icmvor8oqp_v6vbzyi1kn","sqlExpression":"SUM(asset_0_amount
+  / 1e9)"}],"annotation_layers":[],"row_limit":10000,"series_columns":[],"series_limit":0,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["created_at"],"columns":[],"aggregates":{"Volume":{"operator":"mean"}},"drop_missing_columns":true}},{"operation":"flatten"}],"orderby":[[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Volume","optionName":"metric_icmvor8oqp_v6vbzyi1kn","sqlExpression":"SUM(asset_0_amount
+  / 1e9)"},false]]}],"form_data":{"datasource":"41__table","viz_type":"mixed_timeseries","slice_id":90,"x_axis":"created_at","time_grain_sqla":"P1D","metrics":[{"expressionType":"SQL","sqlExpression":"AVG(asset_0_amount
+  / (asset_1_amount / 1e3))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Average
+  Price","optionName":"metric_sujg6dgq9r_hcsg8buyz6c"}],"groupby":[],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_djspg0w6y2i_5p5hox0tryp","isExtra":false,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"created_at"},{"clause":"WHERE","comparator":null,"datasourceWarning":false,"expressionType":"SQL","filterOptionName":"filter_p6bcsvk3ye_d4zqqc8f04w","isExtra":false,"isNew":false,"operator":null,"sqlExpression":"pool_address
+  = decode(''007194e867aed719e1d45246c0b8facb07bdcba1cef2d5199ffac24531e3ad73a9'',
+  ''hex'')","subject":null},{"clause":"WHERE","comparator":null,"datasourceWarning":false,"expressionType":"SQL","filterOptionName":"filter_jeyjcs4d63_2zbhiv9ulg","isExtra":false,"isNew":false,"operator":null,"sqlExpression":"operation_type
+  = ''swap''","subject":null}],"order_desc":true,"row_limit":10000,"truncate_metric":true,"comparison_type":"values","annotation_layers":[],"x_axis_title_margin":15,"y_axis_title_margin":15,"y_axis_title_position":"Left","color_scheme":"supersetColors","seriesType":"smooth","area":true,"opacity":0.1,"markerSize":6,"yAxisIndex":0,"seriesTypeB":"bar","opacityB":0.1,"markerSizeB":6,"yAxisIndexB":1,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","rich_tooltip":true,"tooltipTimeFormat":"smart_date","truncateXAxis":false,"xAxisBounds":[null,null],"truncateYAxis":true,"y_axis_bounds":[null,0.002],"y_axis_format":"SMART_NUMBER","y_axis_bounds_secondary":[0,2000000],"y_axis_format_secondary":"SMART_NUMBER","extra_form_data":{},"dashboards":[14],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 79031690-9e90-4145-90a0-4807bfe3052f
+version: 1.0.0
+dataset_uuid: bdef4710-e815-41e1-9b98-40bd837a0bb4

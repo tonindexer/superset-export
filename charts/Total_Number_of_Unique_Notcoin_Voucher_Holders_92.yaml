@@ -1,0 +1,65 @@
+slice_name: Total Number of Unique Notcoin Voucher Holders
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 18__table
+  viz_type: big_number_total
+  metric:
+    expressionType: SQL
+    sqlExpression: uniq(owner_address)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: uniq(owner_address)
+    optionName: metric_5opq6460rnx_hrfcjs6teh7
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: updated_at
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_3iaep03wps8_diy1xke3tom
+  - expressionType: SQL
+    sqlExpression: minter_address = unhex('00e6923eb901bfe6d1a65a5bc2292b0e2462a220213c3f1d1b2d60491543a34860')
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_o3yxy791xmg_gvcsiqwp8u
+  - expressionType: SQL
+    sqlExpression: fake = False
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_u86x2m2y2t_14vyemaf7th
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 14
+query_context: '{"datasource":{"id":18,"type":"table"},"force":false,"queries":[{"filters":[{"col":"updated_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":"(minter_address = unhex(''00e6923eb901bfe6d1a65a5bc2292b0e2462a220213c3f1d1b2d60491543a34860''))
+  AND (fake = False)"},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"uniq(owner_address)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"uniq(owner_address)","optionName":"metric_5opq6460rnx_hrfcjs6teh7"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"18__table","viz_type":"big_number_total","metric":{"expressionType":"SQL","sqlExpression":"uniq(owner_address)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"uniq(owner_address)","optionName":"metric_5opq6460rnx_hrfcjs6teh7"},"adhoc_filters":[{"expressionType":"SIMPLE","subject":"updated_at","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_3iaep03wps8_diy1xke3tom"},{"expressionType":"SQL","sqlExpression":"minter_address
+  = unhex(''00e6923eb901bfe6d1a65a5bc2292b0e2462a220213c3f1d1b2d60491543a34860'')","clause":"WHERE","subject":null,"operator":null,"comparator":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_o3yxy791xmg_gvcsiqwp8u"},{"expressionType":"SQL","sqlExpression":"fake
+  = False","clause":"WHERE","subject":null,"operator":null,"comparator":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_u86x2m2y2t_14vyemaf7th"}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","extra_form_data":{},"dashboards":[14],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 70334b80-52c5-4f2a-b9a8-8bdf16407448
+version: 1.0.0
+dataset_uuid: 79c170c9-44a8-40d7-8723-5c5b02aa4066

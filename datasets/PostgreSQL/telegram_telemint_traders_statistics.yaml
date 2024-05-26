@@ -1,0 +1,100 @@
+table_name: telegram_telemint_traders_statistics
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: null
+sql: "SELECT trader_address, sum(buy_volume) as buy_volume, sum(buy_count) as buy_count,\
+  \ sum(sell_volume) as sell_volume, sum(sell_count) as sell_count\nFROM (\n  SELECT\n\
+  \    seller_address AS trader_address, 0 as buy_volume, 0 as buy_count, sum(sale_price/1e9)\
+  \ as sell_volume, count(*) as sell_count\n  FROM telemint_sales\n  WHERE \n    sale_type\
+  \ = 'secondary_sale' AND \n    minter_address IN (\n      decode('000E41DC1DC3C9067ED24248580E12B3359818D83DEE0304FABCF80845EAFAFDB2',\
+  \ 'hex'), \n      decode('0080D78A35F955A14B679FAA887FF4CD5BFC0F43B4A4EEA2A7E6927F3701B273C2',\
+  \ 'hex')\n    )\n  GROUP BY seller_address\n  \n  UNION ALL\n  \n  SELECT\n    buyer_address\
+  \ AS trader_address, sum(sale_price/1e9) as buy_volume, count(*) as buy_count, 0\
+  \ as sell_volume, 0 as sell_count\n  FROM telemint_sales\n  WHERE\n    minter_address\
+  \ IN (\n      decode('000E41DC1DC3C9067ED24248580E12B3359818D83DEE0304FABCF80845EAFAFDB2',\
+  \ 'hex'), \n      decode('0080D78A35F955A14B679FAA887FF4CD5BFC0F43B4A4EEA2A7E6927F3701B273C2',\
+  \ 'hex')\n    )\n  GROUP BY buyer_address\n) as q\nGROUP BY trader_address"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 630ea06f-1286-4ce8-8bb3-3bfbe82957b8
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: trader_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BINARY
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: buy_count
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: buy_volume
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: sell_count
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: sell_volume
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 59f15a57-d852-4882-b71c-b8f76577e6e2

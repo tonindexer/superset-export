@@ -1,0 +1,78 @@
+slice_name: StonFi Total Volume of Swaps
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 30__table
+  viz_type: big_number_total
+  metric:
+    expressionType: SQL
+    sqlExpression: 'sum(case when asset_0_jetton_address = decode(''001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f'',
+      ''hex'') then asset_0_amount / 1e9
+
+      when asset_1_jetton_address = decode(''001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f'',
+      ''hex'') then asset_1_amount / 1e9
+
+      end)'
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: 'sum(case when asset_0_jetton_address = decode(''001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f'',
+      ''hex'') then asset_0_amount / 1e9
+
+      when asset_1_jetton_address = decode(''001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f'',
+      ''hex'') then asset_1_amount / 1e9
+
+      end)'
+    optionName: metric_vgxtp9ax9tp_l5cdkjj8ha
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: created_at
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_tu3wjhodj38_u91ms9p5ki
+  - expressionType: SIMPLE
+    subject: operation_type
+    operator: IN
+    operatorId: IN
+    comparator:
+    - swap
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_cbo5potmkic_hezc2b4kefk
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 13
+query_context: '{"datasource":{"id":30,"type":"table"},"force":false,"queries":[{"filters":[{"col":"created_at","op":"TEMPORAL_RANGE","val":"No
+  filter"},{"col":"operation_type","op":"IN","val":["swap"]}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"sum(case
+  when asset_0_jetton_address = decode(''001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f'',
+  ''hex'') then asset_0_amount / 1e9\nwhen asset_1_jetton_address = decode(''001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f'',
+  ''hex'') then asset_1_amount / 1e9\nend)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"sum(case
+  when asset_0_jetton_address = decode(''001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f'',
+  ''hex'') then asset_0_amount / 1e9\nwhen asset_1_jetton_address = decode(''001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f'',
+  ''hex'') then asset_1_amount / 1e9\nend)","optionName":"metric_vgxtp9ax9tp_l5cdkjj8ha"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"30__table","viz_type":"big_number_total","metric":{"expressionType":"SQL","sqlExpression":"sum(case
+  when asset_0_jetton_address = decode(''001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f'',
+  ''hex'') then asset_0_amount / 1e9\nwhen asset_1_jetton_address = decode(''001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f'',
+  ''hex'') then asset_1_amount / 1e9\nend)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"sum(case
+  when asset_0_jetton_address = decode(''001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f'',
+  ''hex'') then asset_0_amount / 1e9\nwhen asset_1_jetton_address = decode(''001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f'',
+  ''hex'') then asset_1_amount / 1e9\nend)","optionName":"metric_vgxtp9ax9tp_l5cdkjj8ha"},"adhoc_filters":[{"expressionType":"SIMPLE","subject":"created_at","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_tu3wjhodj38_u91ms9p5ki"},{"expressionType":"SIMPLE","subject":"operation_type","operator":"IN","operatorId":"IN","comparator":["swap"],"clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_cbo5potmkic_hezc2b4kefk"}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","extra_form_data":{},"dashboards":[13],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 761a9502-3d34-46e3-9111-e93b1b679f9e
+version: 1.0.0
+dataset_uuid: 06be013b-d654-48c0-90a2-aa053767b5ed

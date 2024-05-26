@@ -1,0 +1,318 @@
+dashboard_title: StonFi
+description: null
+css: ''
+slug: stonfi
+certified_by: ''
+certification_details: ''
+published: true
+uuid: aa178160-b2c4-4b0e-b57c-73e1275a93df
+position:
+  CHART-bgtW2H1a2S:
+    children: []
+    id: CHART-bgtW2H1a2S
+    meta:
+      chartId: 82
+      height: 28
+      sliceName: StonFi Total Number of Traders
+      uuid: 04fce263-22a3-4508-9d94-8ef988f2ef02
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-VdCSAwbJdP
+    - COLUMN-AUIwn5f7r2
+    type: CHART
+  CHART-explore-74-1:
+    children: []
+    id: CHART-explore-74-1
+    meta:
+      chartId: 74
+      height: 50
+      sliceName: StonFi Number of Active Pools
+      uuid: 3fc2a779-6203-40b6-be90-c339b9623a90
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-VdCSAwbJdP
+    type: CHART
+  CHART-explore-75-1:
+    children: []
+    id: CHART-explore-75-1
+    meta:
+      chartId: 75
+      height: 50
+      sliceName: StonFi Number of Active Traders
+      uuid: cb383c23-8b1e-46c6-aa94-60556d341351
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-VdCSAwbJdP
+    type: CHART
+  CHART-explore-76-1:
+    children: []
+    id: CHART-explore-76-1
+    meta:
+      chartId: 76
+      height: 50
+      sliceName: StonFi Operations Count
+      uuid: 93682f87-f8f0-45d9-ae72-a042ccf205d9
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-acu_B0RgIS
+    type: CHART
+  CHART-explore-77-1:
+    children: []
+    id: CHART-explore-77-1
+    meta:
+      chartId: 77
+      height: 50
+      sliceName: StonFi Operations Volume (pTON)
+      uuid: 32f785c0-0092-479e-a45f-f9aa90ade41a
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-acu_B0RgIS
+    type: CHART
+  CHART-explore-78-1:
+    children: []
+    id: CHART-explore-78-1
+    meta:
+      chartId: 78
+      height: 24
+      sliceName: StonFi Total Number of Swaps
+      uuid: 9dd8afe5-de65-4ea1-b919-561af7150751
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-acu_B0RgIS
+    - COLUMN-DOLKsIUD0R
+    type: CHART
+  CHART-explore-79-1:
+    children: []
+    id: CHART-explore-79-1
+    meta:
+      chartId: 79
+      height: 24
+      sliceName: StonFi Total Volume of Swaps
+      uuid: 761a9502-3d34-46e3-9111-e93b1b679f9e
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-acu_B0RgIS
+    - COLUMN-DOLKsIUD0R
+    type: CHART
+  CHART-explore-83-1:
+    children: []
+    id: CHART-explore-83-1
+    meta:
+      chartId: 83
+      height: 79
+      sliceName: TOP StonFi Traders
+      uuid: 45e45c6f-4cb3-4a78-986b-680b0273b0ea
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-7sVFak4ag
+    type: CHART
+  CHART-xMyWSnRNZO:
+    children: []
+    id: CHART-xMyWSnRNZO
+    meta:
+      chartId: 81
+      height: 20
+      sliceName: StonFi Total Number of Pools
+      uuid: 377ca95e-0607-462b-b675-6203355fb2f9
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-VdCSAwbJdP
+    - COLUMN-AUIwn5f7r2
+    type: CHART
+  COLUMN-AUIwn5f7r2:
+    children:
+    - CHART-xMyWSnRNZO
+    - CHART-bgtW2H1a2S
+    id: COLUMN-AUIwn5f7r2
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-VdCSAwbJdP
+    type: COLUMN
+  COLUMN-DOLKsIUD0R:
+    children:
+    - CHART-explore-79-1
+    - CHART-explore-78-1
+    id: COLUMN-DOLKsIUD0R
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-acu_B0RgIS
+    type: COLUMN
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-acu_B0RgIS
+    - ROW-VdCSAwbJdP
+    - ROW-7sVFak4ag
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: StonFi
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-7sVFak4ag:
+    children:
+    - CHART-explore-83-1
+    id: ROW-7sVFak4ag
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-VdCSAwbJdP:
+    children:
+    - CHART-explore-74-1
+    - CHART-explore-75-1
+    - COLUMN-AUIwn5f7r2
+    id: ROW-VdCSAwbJdP
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-acu_B0RgIS:
+    children:
+    - CHART-explore-77-1
+    - CHART-explore-76-1
+    - COLUMN-DOLKsIUD0R
+    id: ROW-acu_B0RgIS
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '74':
+      id: 74
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 81
+        - 82
+        - 83
+    '75':
+      id: 75
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 74
+        - 76
+        - 77
+        - 78
+        - 79
+        - 81
+        - 82
+        - 83
+    '76':
+      id: 76
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 74
+        - 75
+        - 77
+        - 78
+        - 79
+        - 81
+        - 82
+        - 83
+    '77':
+      id: 77
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 74
+        - 75
+        - 76
+        - 78
+        - 79
+        - 81
+        - 82
+        - 83
+    '83':
+      id: 83
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 81
+        - 82
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 74
+    - 75
+    - 76
+    - 77
+    - 78
+    - 79
+    - 81
+    - 82
+    - 83
+  color_scheme: ''
+  refresh_frequency: 0
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  shared_label_colors:
+    count(distinct pool_address): '#454E7C'
+    swap: '#1FA8C9'
+    deposit: '#5AC189'
+    withdrawal: '#666666'
+    COUNT(DISTINCT trader_address): '#FF7F44'
+  color_scheme_domain: []
+version: 1.0.0

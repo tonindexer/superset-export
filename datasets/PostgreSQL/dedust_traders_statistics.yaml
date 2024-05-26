@@ -1,0 +1,100 @@
+table_name: dedust_traders_statistics
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: public
+sql: "SELECT \n  trader_address, \n  SUM(\n    CASE\n      WHEN asset_0_type = 'native'\
+  \ AND order_side = 'sell' THEN asset_0_amount / 1e9\n      WHEN asset_1_type = 'native'\
+  \ AND order_side = 'buy' THEN asset_1_amount / 1e9\n    END\n  ) AS buy_volume,\n\
+  \  SUM(\n    CASE\n      WHEN asset_0_type = 'native' AND order_side = 'sell' THEN\
+  \ 1\n      WHEN asset_1_type = 'native' AND order_side = 'buy' THEN 1\n    END\n\
+  \  ) AS buy_count,\n  SUM(\n    CASE\n      WHEN asset_0_type = 'native' AND order_side\
+  \ = 'buy' THEN asset_0_amount / 1e9\n      WHEN asset_1_type = 'native' AND order_side\
+  \ = 'sell' THEN asset_1_amount / 1e9\n    END\n  ) AS sell_volume,\n  SUM(\n   \
+  \ CASE\n      WHEN asset_0_type = 'native' AND order_side = 'buy' THEN 1\n     \
+  \ WHEN asset_1_type = 'native' AND order_side = 'sell' THEN 1\n    END\n  ) AS sell_count\n\
+  FROM dex_operations\nWHERE exchange_name = 'dedust'::dex_name\nGROUP BY trader_address"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: f1cc914c-dede-4254-b33d-0e3dd1e91beb
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: trader_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BINARY
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: buy_volume
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: sell_volume
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: buy_count
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: sell_count
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+version: 1.0.0
+database_uuid: 59f15a57-d852-4882-b71c-b8f76577e6e2

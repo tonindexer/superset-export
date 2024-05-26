@@ -1,0 +1,49 @@
+slice_name: Telegram Usernames Total Number of Traders
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 24__table
+  viz_type: big_number_total
+  metric:
+    expressionType: SQL
+    sqlExpression: COUNT(DISTINCT trader_address)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: COUNT(DISTINCT trader_address)
+    optionName: metric_pbovh2rex4a_dm8xq5h7hv9
+  adhoc_filters:
+  - expressionType: SQL
+    sqlExpression: minter_address = decode('0080d78a35f955a14b679faa887ff4cd5bfc0f43b4a4eea2a7e6927f3701b273c2',
+      'hex')
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_1g1im8j0xsx_0v38idnwxlli
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 4
+query_context: '{"datasource":{"id":24,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":"(minter_address
+  = decode(''0080d78a35f955a14b679faa887ff4cd5bfc0f43b4a4eea2a7e6927f3701b273c2'',
+  ''hex''))"},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"COUNT(DISTINCT
+  trader_address)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT(DISTINCT
+  trader_address)","optionName":"metric_pbovh2rex4a_dm8xq5h7hv9"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"24__table","viz_type":"big_number_total","metric":{"expressionType":"SQL","sqlExpression":"COUNT(DISTINCT
+  trader_address)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT(DISTINCT
+  trader_address)","optionName":"metric_pbovh2rex4a_dm8xq5h7hv9"},"adhoc_filters":[{"expressionType":"SQL","sqlExpression":"minter_address
+  = decode(''0080d78a35f955a14b679faa887ff4cd5bfc0f43b4a4eea2a7e6927f3701b273c2'',
+  ''hex'')","clause":"WHERE","subject":null,"operator":null,"comparator":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_1g1im8j0xsx_0v38idnwxlli"}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","extra_form_data":{},"dashboards":[4],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: d75808e6-899b-4895-bf86-b65c5f87198b
+version: 1.0.0
+dataset_uuid: b94992b4-4c28-448b-8909-97fff5ec9425

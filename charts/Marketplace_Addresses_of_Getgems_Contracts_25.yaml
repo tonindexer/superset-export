@@ -1,0 +1,70 @@
+slice_name: Marketplace Addresses of Getgems Contracts
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 26__table
+  viz_type: table
+  slice_id: 25
+  query_mode: aggregate
+  groupby:
+  - label: marketplace_address
+    sqlExpression: 'concat(''0:'', encode(substring(marketplace_address, 2, 32), ''hex'')) '
+    expressionType: SQL
+  time_grain_sqla: P1D
+  temporal_columns_lookup:
+    created_at: true
+  metrics:
+  - expressionType: SQL
+    sqlExpression: count(sale_price)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: count(sale_price)
+    optionName: metric_qi804rqltm_7t2q8usiaex
+  - expressionType: SQL
+    sqlExpression: sum(sale_price / 1e9)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: sum(sale_price / 1e9)
+    optionName: metric_xos9gwdqjp_e38wfih2iee
+  all_columns: []
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    subject: created_at
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  timeseries_limit_metric: count
+  order_by_cols: []
+  row_limit: 1000
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  show_cell_bars: true
+  color_pn: true
+  column_config:
+    marketplace_address:
+      truncateLongCells: false
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 3
+query_context: '{"datasource":{"id":26,"type":"table"},"force":false,"queries":[{"filters":[{"col":"created_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":[{"label":"marketplace_address","sqlExpression":"concat(''0:'',
+  encode(substring(marketplace_address, 2, 32), ''hex'')) ","expressionType":"SQL"}],"metrics":[{"expressionType":"SQL","sqlExpression":"count(sale_price)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"count(sale_price)","optionName":"metric_qi804rqltm_7t2q8usiaex"},{"expressionType":"SQL","sqlExpression":"sum(sale_price
+  / 1e9)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"sum(sale_price
+  / 1e9)","optionName":"metric_xos9gwdqjp_e38wfih2iee"}],"orderby":[["count",false]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"series_limit_metric":"count","order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[]}],"form_data":{"datasource":"26__table","viz_type":"table","slice_id":25,"query_mode":"aggregate","groupby":[{"label":"marketplace_address","sqlExpression":"concat(''0:'',
+  encode(substring(marketplace_address, 2, 32), ''hex'')) ","expressionType":"SQL"}],"time_grain_sqla":"P1D","temporal_columns_lookup":{"created_at":true},"metrics":[{"expressionType":"SQL","sqlExpression":"count(sale_price)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"count(sale_price)","optionName":"metric_qi804rqltm_7t2q8usiaex"},{"expressionType":"SQL","sqlExpression":"sum(sale_price
+  / 1e9)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"sum(sale_price
+  / 1e9)","optionName":"metric_xos9gwdqjp_e38wfih2iee"}],"all_columns":[],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","subject":"created_at","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"timeseries_limit_metric":"count","order_by_cols":[],"row_limit":1000,"server_page_length":10,"order_desc":true,"table_timestamp_format":"smart_date","show_cell_bars":true,"color_pn":true,"column_config":{"marketplace_address":{"truncateLongCells":false}},"conditional_formatting":[],"extra_form_data":{},"dashboards":[3],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: ae6dc1a2-af65-491d-b795-37a054fe8d27
+version: 1.0.0
+dataset_uuid: c00d9ff2-9c37-48f6-b57a-57cc0fa7c93c

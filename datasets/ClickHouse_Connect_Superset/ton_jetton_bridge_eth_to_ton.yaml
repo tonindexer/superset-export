@@ -1,0 +1,112 @@
+table_name: ton_jetton_bridge_eth_to_ton
+main_dttm_col: created_at
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: ton
+sql: "WITH\n  unhex('00dc064187982e294dfdf8c771a6d395ef7a93b9c3ad0337167e5d3e08ebe5061b')\
+  \ as jWBTC_minter,\n  unhex('00729c13b6df2c07cbf0a06ab63d34af454f3d320ec1bcd8fb5c6d24d0806a17c2')\
+  \ as jUSDT_minter,\n  unhex('007e30fc2b7751ba58a3642f3fd59d5e96a810ddd78d8a310bfe8353bef10500df')\
+  \ as jUSDC_minter,\n  unhex('00e8fd927243f62a0730706d5a4c9a16e121d74ab513fdf47ba0649d78685b1cc6')\
+  \ as jDAI_minter\n\nSELECT\n  src_address as minter_address,\n  dst_address as wallet_address,\n\
+  \  JSONExtractInt(data_json, 2) / pow(10, decimals) as jetton_amount,\n  multiIf(src_address\
+  \ == jWBTC_minter, 8, src_address == jUSDT_minter, 6, src_address == jUSDC_minter,\
+  \ 6, src_address == jDAI_minter, 18, 0) as decimals,\n  multiIf(src_address == jWBTC_minter,\
+  \ 'jWBTC', src_address == jUSDT_minter, 'jUSDT', src_address == jUSDC_minter, 'jUSDC',\
+  \ src_address == jDAI_minter, 'jDAI', 'unknown') as token,\n  created_at\n\nFROM\
+  \ messages\nWHERE\n  type = 'INTERNAL'\n  AND operation_name = 'jetton_internal_transfer'\n\
+  \  AND src_address IN (jWBTC_minter, jUSDT_minter, jUSDC_minter, jDAI_minter)"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 5c9ed5ce-ebb5-4e4e-b187-f0c9fdd25076
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: jetton_amount
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Float64
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: decimals
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: UInt8
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: created_at
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DateTime
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: wallet_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: minter_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: token
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 7dedc5b6-fb1a-4fb7-9431-12dcf78336aa

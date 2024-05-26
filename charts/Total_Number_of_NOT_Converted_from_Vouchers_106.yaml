@@ -1,0 +1,55 @@
+slice_name: Total Number of NOT Converted from Vouchers
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 43__table
+  viz_type: big_number_total
+  slice_id: 106
+  metric:
+    aggregate: SUM
+    column:
+      advanced_data_type: null
+      changed_on: '2024-05-26T03:54:08.044273'
+      column_name: voucher_value
+      created_on: '2024-05-26T03:54:08.044272'
+      description: null
+      expression: null
+      extra: null
+      filterable: true
+      groupby: true
+      id: 323
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: NUMERIC
+      type_generic: 0
+      uuid: 07a45877-9961-49e2-b844-312c2da0ee7a
+      verbose_name: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: SUM(voucher_value)
+    optionName: metric_b49u584nupo_ogo0kivq5jh
+    sqlExpression: null
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: created_at
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 14
+query_context: '{"datasource":{"id":43,"type":"table"},"force":false,"queries":[{"filters":[{"col":"created_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"aggregate":"SUM","column":{"advanced_data_type":null,"changed_on":"2024-05-26T03:54:08.044273","column_name":"voucher_value","created_on":"2024-05-26T03:54:08.044272","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":323,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"uuid":"07a45877-9961-49e2-b844-312c2da0ee7a","verbose_name":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(voucher_value)","optionName":"metric_b49u584nupo_ogo0kivq5jh","sqlExpression":null}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"43__table","viz_type":"big_number_total","slice_id":106,"metric":{"aggregate":"SUM","column":{"advanced_data_type":null,"changed_on":"2024-05-26T03:54:08.044273","column_name":"voucher_value","created_on":"2024-05-26T03:54:08.044272","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":323,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"uuid":"07a45877-9961-49e2-b844-312c2da0ee7a","verbose_name":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(voucher_value)","optionName":"metric_b49u584nupo_ogo0kivq5jh","sqlExpression":null},"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"created_at"}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","extra_form_data":{},"dashboards":[14],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: e63e8636-3694-474a-a0b8-3b513669fa29
+version: 1.0.0
+dataset_uuid: 60381d28-899b-4ee7-ad9c-706583a5568b

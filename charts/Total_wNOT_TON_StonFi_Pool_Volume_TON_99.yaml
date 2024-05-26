@@ -1,0 +1,71 @@
+slice_name: Total wNOT/TON StonFi Pool Volume (TON)
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 41__table
+  viz_type: big_number_total
+  metric:
+    expressionType: SQL
+    sqlExpression: SUM(asset_0_amount / 1e9)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: SUM(asset_0_amount / 1e9)
+    optionName: metric_2czssmif1mw_cy2dpu46z4
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: created_at
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_005t2mj2gya6_gzt6s8gby0b
+  - expressionType: SQL
+    sqlExpression: pool_address = decode('007194e867aed719e1d45246c0b8facb07bdcba1cef2d5199ffac24531e3ad73a9',
+      'hex')
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_sia4fskom_fue0i16yj9v
+  - expressionType: SQL
+    sqlExpression: operation_type = 'swap'
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_iaivk7ta2bj_nfbdc66ek4g
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 14
+query_context: '{"datasource":{"id":41,"type":"table"},"force":false,"queries":[{"filters":[{"col":"created_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":"(pool_address = decode(''007194e867aed719e1d45246c0b8facb07bdcba1cef2d5199ffac24531e3ad73a9'',
+  ''hex'')) AND (operation_type = ''swap'')"},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"SUM(asset_0_amount
+  / 1e9)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(asset_0_amount
+  / 1e9)","optionName":"metric_2czssmif1mw_cy2dpu46z4"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"41__table","viz_type":"big_number_total","metric":{"expressionType":"SQL","sqlExpression":"SUM(asset_0_amount
+  / 1e9)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(asset_0_amount
+  / 1e9)","optionName":"metric_2czssmif1mw_cy2dpu46z4"},"adhoc_filters":[{"expressionType":"SIMPLE","subject":"created_at","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_005t2mj2gya6_gzt6s8gby0b"},{"expressionType":"SQL","sqlExpression":"pool_address
+  = decode(''007194e867aed719e1d45246c0b8facb07bdcba1cef2d5199ffac24531e3ad73a9'',
+  ''hex'')","clause":"WHERE","subject":null,"operator":null,"comparator":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_sia4fskom_fue0i16yj9v"},{"expressionType":"SQL","sqlExpression":"operation_type
+  = ''swap''","clause":"WHERE","subject":null,"operator":null,"comparator":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_iaivk7ta2bj_nfbdc66ek4g"}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","extra_form_data":{},"dashboards":[14],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: e85eca5b-7d80-4e6e-a240-1d5a02a1154e
+version: 1.0.0
+dataset_uuid: bdef4710-e815-41e1-9b98-40bd837a0bb4

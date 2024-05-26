@@ -1,0 +1,1083 @@
+dashboard_title: Notcoin
+description: null
+css: ''
+slug: notcoin
+certified_by: ''
+certification_details: ''
+published: true
+uuid: 3db5867a-9702-415f-98f1-273c26de9e32
+position:
+  CHART-explore-100-1:
+    children: []
+    id: CHART-explore-100-1
+    meta:
+      chartId: 100
+      height: 24
+      sliceName: Total Number of wNOT/TON StonFi Pool Traders
+      sliceNameOverride: wNOT/TON Traders
+      uuid: b38e1985-9c75-45a4-859d-009e51d989a5
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-6oi3JYUeOa
+    - COLUMN-mpNEJjQpYk
+    type: CHART
+  CHART-explore-101-1:
+    children: []
+    id: CHART-explore-101-1
+    meta:
+      chartId: 101
+      height: 50
+      sliceName: wNOT -> NOT Conversions
+      uuid: 64d33342-7805-4d19-9744-fc193758d01d
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2zqkKxKUrO
+    type: CHART
+  CHART-explore-102-1:
+    children: []
+    id: CHART-explore-102-1
+    meta:
+      chartId: 102
+      height: 50
+      sliceName: Number of wNOT -> NOT Conversion Users
+      sliceNameOverride: Number of wNOT -> NOT Conversion Active Users
+      uuid: b79040e8-65d5-45af-a0d0-d481ca72aa5a
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2zqkKxKUrO
+    type: CHART
+  CHART-explore-103-1:
+    children: []
+    id: CHART-explore-103-1
+    meta:
+      chartId: 103
+      height: 50
+      sliceName: Notcoin Voucher -> NOT Conversions
+      uuid: 910e9f38-582e-449d-b257-afb44ac84b85
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-F-a7u4I050
+    type: CHART
+  CHART-explore-104-1:
+    children: []
+    id: CHART-explore-104-1
+    meta:
+      chartId: 104
+      height: 50
+      sliceName: Number of Notcoin Voucher Conversion Users
+      sliceNameOverride: Number of Notcoin Voucher Conversion Active Users
+      uuid: d9b8ec23-107a-49b9-bd89-3d5e65a4f234
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-F-a7u4I050
+    type: CHART
+  CHART-explore-105-1:
+    children: []
+    id: CHART-explore-105-1
+    meta:
+      chartId: 105
+      height: 24
+      sliceName: Total Number of Notcoin Voucher Conversion Users
+      sliceNameOverride: Notcoin Voucher Conversion Users
+      uuid: a0929194-7fe4-4e06-aec6-8a3811a65969
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-F-a7u4I050
+    - COLUMN-BgQTwpDCW_
+    type: CHART
+  CHART-explore-106-1:
+    children: []
+    id: CHART-explore-106-1
+    meta:
+      chartId: 106
+      height: 24
+      sliceName: Total Number of NOT Converted from Vouchers
+      sliceNameOverride: Amount of NOT Converted from Vouchers
+      uuid: e63e8636-3694-474a-a0b8-3b513669fa29
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-F-a7u4I050
+    - COLUMN-BgQTwpDCW_
+    type: CHART
+  CHART-explore-107-1:
+    children: []
+    id: CHART-explore-107-1
+    meta:
+      chartId: 107
+      height: 24
+      sliceName: Total Number of wNOT Conversion Users
+      sliceNameOverride: wNOT Conversion Users
+      uuid: 0e5a7235-7052-48b5-83ad-dd90932c9931
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2zqkKxKUrO
+    - COLUMN-x56dvx4kaI
+    type: CHART
+  CHART-explore-108-1:
+    children: []
+    id: CHART-explore-108-1
+    meta:
+      chartId: 108
+      height: 24
+      sliceName: Total Amount of NOT Converted from wTON
+      sliceNameOverride: Amount of NOT Converted from wTON
+      uuid: d741f03e-fd36-47c0-8bb7-9e86fc223d4c
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2zqkKxKUrO
+    - COLUMN-x56dvx4kaI
+    type: CHART
+  CHART-explore-109-1:
+    children: []
+    id: CHART-explore-109-1
+    meta:
+      chartId: 109
+      height: 50
+      sliceName: Number of NOT Holders
+      uuid: ccd3be5f-c2c3-44df-8e18-e7529c262848
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-OkV_IwvXUC
+    type: CHART
+  CHART-explore-85-1:
+    children: []
+    id: CHART-explore-85-1
+    meta:
+      chartId: 85
+      height: 50
+      sliceName: Number of Notcoin Voucher Deploys
+      uuid: 5cef7bb9-c564-45bf-9d0b-3503a24bd7a5
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-smmY2kr4o
+    type: CHART
+  CHART-explore-86-1:
+    children: []
+    id: CHART-explore-86-1
+    meta:
+      chartId: 86
+      height: 50
+      sliceName: Notcoin Vouchers Price and Volume (TON)
+      uuid: ef7e12cf-19d3-4a27-90ce-791987a68c64
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Tq7_h-Vy_4
+    type: CHART
+  CHART-explore-87-1:
+    children: []
+    id: CHART-explore-87-1
+    meta:
+      chartId: 87
+      height: 50
+      sliceName: Number of Notcoin Voucher Holders
+      uuid: 2f73952d-67f5-48cc-b38a-a13f8d597af2
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-smmY2kr4o
+    type: CHART
+  CHART-explore-88-1:
+    children: []
+    id: CHART-explore-88-1
+    meta:
+      chartId: 88
+      height: 50
+      sliceName: Notcoin Voucher -> wNOT Conversions
+      uuid: 9d1406bb-0a1f-4389-a707-4c9be6e9c59f
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Fnis9qextp
+    type: CHART
+  CHART-explore-89-1:
+    children: []
+    id: CHART-explore-89-1
+    meta:
+      chartId: 89
+      height: 50
+      sliceName: Number of wNOT Holders
+      uuid: 100a66a0-9d99-4664-9cc3-c7c6c3be3e45
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Fnis9qextp
+    type: CHART
+  CHART-explore-90-1:
+    children: []
+    id: CHART-explore-90-1
+    meta:
+      chartId: 90
+      height: 50
+      sliceName: StonFi wNOT / TON Pool Price and Volume (TON)
+      sliceNameOverride: StonFi wNOT/TON Pool Price and Volume (TON)
+      uuid: 79031690-9e90-4145-90a0-4807bfe3052f
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-6oi3JYUeOa
+    type: CHART
+  CHART-explore-91-1:
+    children: []
+    id: CHART-explore-91-1
+    meta:
+      chartId: 91
+      height: 24
+      sliceName: Total Number of Notcoin Voucher Receivers
+      sliceNameOverride: Notcoin Voucher Receivers
+      uuid: 3972e77a-f79a-4df7-bcbf-2720a96a90d9
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-smmY2kr4o
+    - COLUMN-aXFTYloQdj
+    type: CHART
+  CHART-explore-92-1:
+    children: []
+    id: CHART-explore-92-1
+    meta:
+      chartId: 92
+      height: 24
+      sliceName: Total Number of Unique Notcoin Voucher Holders
+      sliceNameOverride: Unique Notcoin Voucher Holders
+      uuid: 70334b80-52c5-4f2a-b9a8-8bdf16407448
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-smmY2kr4o
+    - COLUMN-aXFTYloQdj
+    type: CHART
+  CHART-explore-93-1:
+    children: []
+    id: CHART-explore-93-1
+    meta:
+      chartId: 93
+      height: 50
+      sliceName: Number of Notcoin Voucher Traders
+      uuid: 22f96ee1-0e86-4cc0-95b2-f54970650bd8
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Tq7_h-Vy_4
+    type: CHART
+  CHART-explore-94-1:
+    children: []
+    id: CHART-explore-94-1
+    meta:
+      chartId: 94
+      height: 24
+      sliceName: Total Notcoin Voucher Sales Volume (TON)
+      sliceNameOverride: Notcoin Voucher Sales Volume (TON)
+      uuid: 0066306e-650b-4b62-9014-399b06cf472b
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Tq7_h-Vy_4
+    - COLUMN-OPIPuukd0x
+    type: CHART
+  CHART-explore-95-1:
+    children: []
+    id: CHART-explore-95-1
+    meta:
+      chartId: 95
+      height: 24
+      sliceName: Total Number of Notcoin Voucher Getgems Traders
+      sliceNameOverride: Notcoin Voucher Getgems Traders
+      uuid: 14e5ae9b-c55f-413b-9ac9-2607bfdd6d5e
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Tq7_h-Vy_4
+    - COLUMN-OPIPuukd0x
+    type: CHART
+  CHART-explore-96-1:
+    children: []
+    id: CHART-explore-96-1
+    meta:
+      chartId: 96
+      height: 50
+      sliceName: Number of wNOT/TON StonFi Pool Traders
+      uuid: c6d3fc74-0818-4839-afea-7f5d2ddf77be
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-6oi3JYUeOa
+    type: CHART
+  CHART-explore-97-1:
+    children: []
+    id: CHART-explore-97-1
+    meta:
+      chartId: 97
+      height: 24
+      sliceName: Total Number of Converted Notcoin Vouchers to wTON
+      sliceNameOverride: Converted Notcoin Vouchers to wTON
+      uuid: 8c52f4e0-8a9b-4de7-8ba5-ccb8bf79ba71
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Fnis9qextp
+    - COLUMN-apb5kDfkwb
+    type: CHART
+  CHART-explore-98-1:
+    children: []
+    id: CHART-explore-98-1
+    meta:
+      chartId: 98
+      height: 24
+      sliceName: Total Number of Notcoin Vouchers Conversion Users
+      sliceNameOverride: Notcoin Vouchers Conversion Users
+      uuid: 9dc18620-e1f6-4d4f-ae19-46a17ae4fe98
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Fnis9qextp
+    - COLUMN-apb5kDfkwb
+    type: CHART
+  CHART-explore-99-1:
+    children: []
+    id: CHART-explore-99-1
+    meta:
+      chartId: 99
+      height: 24
+      sliceName: Total wNOT/TON StonFi Pool Volume (TON)
+      sliceNameOverride: wNOT/TON Volume (TON)
+      uuid: e85eca5b-7d80-4e6e-a240-1d5a02a1154e
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-6oi3JYUeOa
+    - COLUMN-mpNEJjQpYk
+    type: CHART
+  COLUMN-BgQTwpDCW_:
+    children:
+    - CHART-explore-105-1
+    - CHART-explore-106-1
+    id: COLUMN-BgQTwpDCW_
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-F-a7u4I050
+    type: COLUMN
+  COLUMN-OPIPuukd0x:
+    children:
+    - CHART-explore-94-1
+    - CHART-explore-95-1
+    id: COLUMN-OPIPuukd0x
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Tq7_h-Vy_4
+    type: COLUMN
+  COLUMN-aXFTYloQdj:
+    children:
+    - CHART-explore-91-1
+    - CHART-explore-92-1
+    id: COLUMN-aXFTYloQdj
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-smmY2kr4o
+    type: COLUMN
+  COLUMN-apb5kDfkwb:
+    children:
+    - CHART-explore-97-1
+    - CHART-explore-98-1
+    id: COLUMN-apb5kDfkwb
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Fnis9qextp
+    type: COLUMN
+  COLUMN-mpNEJjQpYk:
+    children:
+    - CHART-explore-99-1
+    - CHART-explore-100-1
+    id: COLUMN-mpNEJjQpYk
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-6oi3JYUeOa
+    type: COLUMN
+  COLUMN-x56dvx4kaI:
+    children:
+    - CHART-explore-107-1
+    - CHART-explore-108-1
+    id: COLUMN-x56dvx4kaI
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2zqkKxKUrO
+    type: COLUMN
+  DASHBOARD_VERSION_KEY: v2
+  DIVIDER-ZoMP-EiE6e:
+    children: []
+    id: DIVIDER-ZoMP-EiE6e
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  DIVIDER-j37HhxdhRC:
+    children: []
+    id: DIVIDER-j37HhxdhRC
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  GRID_ID:
+    children:
+    - HEADER-CJCxi8QTSw
+    - ROW-smmY2kr4o
+    - ROW-Tq7_h-Vy_4
+    - DIVIDER-j37HhxdhRC
+    - HEADER-ercEw29amN
+    - ROW-Fnis9qextp
+    - ROW-6oi3JYUeOa
+    - DIVIDER-ZoMP-EiE6e
+    - HEADER-Vcg7jtGWlf
+    - ROW-F-a7u4I050
+    - ROW-2zqkKxKUrO
+    - ROW-OkV_IwvXUC
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER-CJCxi8QTSw:
+    children: []
+    id: HEADER-CJCxi8QTSw
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: MEDIUM_HEADER
+      text: Notcoin NFT Vouchers
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER-Vcg7jtGWlf:
+    children: []
+    id: HEADER-Vcg7jtGWlf
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: MEDIUM_HEADER
+      text: $NOT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER-ercEw29amN:
+    children: []
+    id: HEADER-ercEw29amN
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: MEDIUM_HEADER
+      text: Shardify $wNOT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Notcoin
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-2zqkKxKUrO:
+    children:
+    - CHART-explore-101-1
+    - CHART-explore-102-1
+    - COLUMN-x56dvx4kaI
+    id: ROW-2zqkKxKUrO
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-6oi3JYUeOa:
+    children:
+    - CHART-explore-90-1
+    - CHART-explore-96-1
+    - COLUMN-mpNEJjQpYk
+    id: ROW-6oi3JYUeOa
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-F-a7u4I050:
+    children:
+    - CHART-explore-103-1
+    - CHART-explore-104-1
+    - COLUMN-BgQTwpDCW_
+    id: ROW-F-a7u4I050
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-Fnis9qextp:
+    children:
+    - CHART-explore-88-1
+    - CHART-explore-89-1
+    - COLUMN-apb5kDfkwb
+    id: ROW-Fnis9qextp
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-OkV_IwvXUC:
+    children:
+    - CHART-explore-109-1
+    id: ROW-OkV_IwvXUC
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-Tq7_h-Vy_4:
+    children:
+    - CHART-explore-86-1
+    - CHART-explore-93-1
+    - COLUMN-OPIPuukd0x
+    id: ROW-Tq7_h-Vy_4
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-smmY2kr4o:
+    children:
+    - CHART-explore-85-1
+    - CHART-explore-87-1
+    - COLUMN-aXFTYloQdj
+    id: ROW-smmY2kr4o
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '85':
+      id: 85
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 103
+        - 104
+        - 105
+        - 106
+        - 107
+        - 108
+        - 109
+    '86':
+      id: 86
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 85
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 103
+        - 104
+        - 105
+        - 106
+        - 107
+        - 108
+        - 109
+    '87':
+      id: 87
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 85
+        - 86
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 103
+        - 104
+        - 105
+        - 106
+        - 107
+        - 108
+        - 109
+    '88':
+      id: 88
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 85
+        - 86
+        - 87
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 103
+        - 104
+        - 105
+        - 106
+        - 107
+        - 108
+        - 109
+    '89':
+      id: 89
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 85
+        - 86
+        - 87
+        - 88
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 103
+        - 104
+        - 105
+        - 106
+        - 107
+        - 108
+        - 109
+    '90':
+      id: 90
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 103
+        - 104
+        - 105
+        - 106
+        - 107
+        - 108
+        - 109
+    '93':
+      id: 93
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 103
+        - 104
+        - 105
+        - 106
+        - 107
+        - 108
+        - 109
+    '96':
+      id: 96
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 103
+        - 104
+        - 105
+        - 106
+        - 107
+        - 108
+        - 109
+    '101':
+      id: 101
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 102
+        - 103
+        - 104
+        - 105
+        - 106
+        - 107
+        - 108
+        - 109
+    '102':
+      id: 102
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 103
+        - 104
+        - 105
+        - 106
+        - 107
+        - 108
+        - 109
+    '103':
+      id: 103
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 104
+        - 105
+        - 106
+        - 107
+        - 108
+        - 109
+    '104':
+      id: 104
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 103
+        - 105
+        - 106
+        - 107
+        - 108
+        - 109
+    '109':
+      id: 109
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 103
+        - 104
+        - 105
+        - 106
+        - 107
+        - 108
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 85
+    - 86
+    - 87
+    - 88
+    - 89
+    - 90
+    - 91
+    - 92
+    - 93
+    - 94
+    - 95
+    - 96
+    - 97
+    - 98
+    - 99
+    - 100
+    - 101
+    - 102
+    - 103
+    - 104
+    - 105
+    - 106
+    - 107
+    - 108
+    - 109
+  color_scheme: supersetColors
+  refresh_frequency: 0
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  shared_label_colors:
+    10K: '#1FA8C9'
+    100K: '#454E7C'
+    MAX(number_of_holders): '#1FA8C9'
+    Average Price: '#1FA8C9'
+    Volume (1): '#454E7C'
+    COUNT_DISTINCT(owner_address): '#1FA8C9'
+    Buyers: '#1FA8C9'
+    Sellers: '#454E7C'
+    Conversions Count: '#1FA8C9'
+    Users Count: '#454E7C'
+    swap: '#1FA8C9'
+    deposit: '#454E7C'
+    withdrawal: '#5AC189'
+    NOT Amount: '#1FA8C9'
+    Tx Count (1): '#454E7C'
+  color_scheme_domain:
+  - '#1FA8C9'
+  - '#454E7C'
+  - '#5AC189'
+  - '#FF7F44'
+  - '#666666'
+  - '#E04355'
+  - '#FCC700'
+  - '#A868B7'
+  - '#3CCCCB'
+  - '#A38F79'
+  - '#8FD3E4'
+  - '#A1A6BD'
+  - '#ACE1C4'
+  - '#FEC0A1'
+  - '#B2B2B2'
+  - '#EFA1AA'
+  - '#FDE380'
+  - '#D3B3DA'
+  - '#9EE5E5'
+  - '#D1C6BC'
+version: 1.0.0

@@ -1,0 +1,323 @@
+dashboard_title: Getgems Activity
+description: null
+css: ''
+slug: getgems
+certified_by: ''
+certification_details: ''
+published: true
+uuid: 3f38ea18-ca97-4566-9df1-bb197e02958d
+position:
+  CHART-explore-40-1:
+    children: []
+    id: CHART-explore-40-1
+    meta:
+      chartId: 26
+      height: 50
+      sliceName: Number of Getgems Traders
+      uuid: 45e64163-4a8e-4c84-a3c4-95a97acb7c96
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Yc9utCbE-
+    type: CHART
+  CHART-explore-49-1:
+    children: []
+    id: CHART-explore-49-1
+    meta:
+      chartId: 30
+      height: 50
+      sliceName: Total Number of Getgems Traders
+      uuid: 375b8e95-a2fd-4f38-9eb9-19eb91cd70d3
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Yc9utCbE-
+    - COLUMN-GaoEgYglJ8
+    type: CHART
+  CHART-explore-50-1:
+    children: []
+    id: CHART-explore-50-1
+    meta:
+      chartId: 32
+      height: 50
+      sliceName: Getgems Sales (Volume)
+      uuid: 41d54cbf-c94c-4036-981e-69575ab2d33c
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Fu_EyopTk2
+    type: CHART
+  CHART-explore-51-1:
+    children: []
+    id: CHART-explore-51-1
+    meta:
+      chartId: 33
+      height: 50
+      sliceName: Getgems Sales (Count)
+      uuid: 3b0ed148-7e8a-4a6b-853f-cda8691035ea
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Fu_EyopTk2
+    type: CHART
+  CHART-explore-52-1:
+    children: []
+    id: CHART-explore-52-1
+    meta:
+      chartId: 9
+      height: 50
+      sliceName: Total Getgems Sales Volume
+      uuid: f724e9a8-73e9-4c79-b64e-3820918b9fe3
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Yc9utCbE-
+    type: CHART
+  CHART-explore-59-1:
+    children: []
+    id: CHART-explore-59-1
+    meta:
+      chartId: 25
+      height: 50
+      sliceName: Marketplace Addresses of Getgems Contracts
+      sliceNameOverride: Marketplace Addresses of Getgems Contracts
+      uuid: ae6dc1a2-af65-491d-b795-37a054fe8d27
+      width: 9
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-88eEmS9d2a
+    type: CHART
+  CHART-explore-60-1:
+    children: []
+    id: CHART-explore-60-1
+    meta:
+      chartId: 60
+      height: 83
+      sliceName: TOP GetGems Traders
+      uuid: 45d55e93-84b5-441d-ba99-f6735ee07212
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-SIwgKdBnW
+    type: CHART
+  COLUMN-GaoEgYglJ8:
+    children:
+    - CHART-explore-49-1
+    id: COLUMN-GaoEgYglJ8
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Yc9utCbE-
+    type: COLUMN
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-88eEmS9d2a
+    - ROW-Fu_EyopTk2
+    - ROW-Yc9utCbE-
+    - ROW-SIwgKdBnW
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Getgems Activity
+    type: HEADER
+  MARKDOWN-9L5tproN6R:
+    children: []
+    id: MARKDOWN-9L5tproN6R
+    meta:
+      code: '## Disclaimer
+
+
+        Note, that this dashboard caclulates statistics not only for Getgems marketplace,
+        but for all Getgems contracts, found in the network.
+
+
+        https://getgems.io
+
+        EQBYTuYbLf8INxFtD8tQeNk5ZLy-nAX9ahQbG_yl1qQ-GEMS
+
+
+        '
+      height: 50
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-88eEmS9d2a
+    type: MARKDOWN
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-88eEmS9d2a:
+    children:
+    - MARKDOWN-9L5tproN6R
+    - CHART-explore-59-1
+    id: ROW-88eEmS9d2a
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-Fu_EyopTk2:
+    children:
+    - CHART-explore-50-1
+    - CHART-explore-51-1
+    id: ROW-Fu_EyopTk2
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-SIwgKdBnW:
+    children:
+    - CHART-explore-60-1
+    id: ROW-SIwgKdBnW
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-Yc9utCbE-:
+    children:
+    - CHART-explore-40-1
+    - COLUMN-GaoEgYglJ8
+    - CHART-explore-52-1
+    id: ROW-Yc9utCbE-
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '25':
+      id: 25
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 9
+        - 26
+        - 30
+        - 32
+        - 33
+        - 60
+    '26':
+      id: 26
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 9
+        - 25
+        - 30
+        - 32
+        - 33
+        - 60
+    '32':
+      id: 32
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 9
+        - 25
+        - 26
+        - 30
+        - 33
+        - 60
+    '33':
+      id: 33
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 9
+        - 25
+        - 26
+        - 30
+        - 32
+        - 60
+    '60':
+      id: 60
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 9
+        - 25
+        - 26
+        - 30
+        - 32
+        - 33
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 9
+    - 25
+    - 26
+    - 30
+    - 32
+    - 33
+    - 60
+  color_scheme: supersetColors
+  refresh_frequency: 0
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  shared_label_colors:
+    fix_price, True: '#1FA8C9'
+    fix_price, False: '#5AC189'
+    auction, True: '#666666'
+    auction, False: '#FCC700'
+    offer, True: '#3CCCCB'
+    offer, False: '#8FD3E4'
+    fix_price: '#454E7C'
+    auction: '#E04355'
+    offer: '#A38F79'
+    COUNT(DISTINCT seller_address): '#FF7F44'
+  color_scheme_domain:
+  - '#1FA8C9'
+  - '#454E7C'
+  - '#5AC189'
+  - '#FF7F44'
+  - '#666666'
+  - '#E04355'
+  - '#FCC700'
+  - '#A868B7'
+  - '#3CCCCB'
+  - '#A38F79'
+  - '#8FD3E4'
+  - '#A1A6BD'
+  - '#ACE1C4'
+  - '#FEC0A1'
+  - '#B2B2B2'
+  - '#EFA1AA'
+  - '#FDE380'
+  - '#D3B3DA'
+  - '#9EE5E5'
+  - '#D1C6BC'
+version: 1.0.0

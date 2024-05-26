@@ -1,0 +1,13 @@
+database_name: PostgreSQL (Transformed)
+sqlalchemy_uri: postgresql+psycopg2://superset:XXXXXXXXXX@postgres:5432/airflow
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: false
+extra:
+  allows_virtual_table_explore: true
+uuid: 2cbc2f57-78a9-4f9b-a7f4-acb4b382115d
+version: 1.0.0

@@ -1,0 +1,705 @@
+dashboard_title: Telemint
+description: null
+css: ''
+slug: telemint
+certified_by: ''
+certification_details: ''
+published: true
+uuid: f7bd3345-a404-42d6-bb40-9b51c6a55750
+position:
+  CHART-2v48mmmEfJ:
+    children: []
+    id: CHART-2v48mmmEfJ
+    meta:
+      chartId: 53
+      height: 50
+      sliceName: Telegram Usernames Daily Sale Count
+      uuid: d4a0c440-94f8-48e6-b03e-37d6f5a50994
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-_9SErt8lf
+    type: CHART
+  CHART-CgrfF2j9YD:
+    children: []
+    id: CHART-CgrfF2j9YD
+    meta:
+      chartId: 54
+      height: 50
+      sliceName: Telegram Usernames Daily Active Buyers and Sellers
+      uuid: 40af6ff3-7058-4e03-9906-011ca7464bc1
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-sZwHCUoHx9
+    type: CHART
+  CHART-explore-41-1:
+    children: []
+    id: CHART-explore-41-1
+    meta:
+      chartId: 3
+      height: 50
+      sliceName: Telegram Numbers On Sale
+      uuid: 31b6647b-68ca-4e78-826a-d230d7dae222
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-hEGlwizob
+    type: CHART
+  CHART-explore-42-1:
+    children: []
+    id: CHART-explore-42-1
+    meta:
+      chartId: 11
+      height: 50
+      sliceName: Telegram Numbers Daily Average Sale Price
+      uuid: 5a601e22-478c-4406-a7c7-6c4b50c0aae1
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-hEGlwizob
+    type: CHART
+  CHART-explore-43-1:
+    children: []
+    id: CHART-explore-43-1
+    meta:
+      chartId: 28
+      height: 50
+      sliceName: Telegram Numbers Daily Sale Volume
+      uuid: 947114a0-e4d2-461a-874f-d899aa68f998
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-p8E9jz0CEf
+    type: CHART
+  CHART-explore-44-1:
+    children: []
+    id: CHART-explore-44-1
+    meta:
+      chartId: 31
+      height: 50
+      sliceName: Telegram Numbers Daily Sales Count
+      uuid: a58011ab-e678-4ca6-a5ae-18330cf81d42
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-p8E9jz0CEf
+    type: CHART
+  CHART-explore-45-1:
+    children: []
+    id: CHART-explore-45-1
+    meta:
+      chartId: 37
+      height: 50
+      sliceName: Telegram Numbers Daily Active Buyers And Sellers
+      sliceNameOverride: Telegram Numbers Daily Active Buyers And Sellers
+      uuid: 8397b391-db56-4ef6-8349-fc36913897ac
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z30pal2_ue
+    - COLUMN--aAGLd4maj
+    type: CHART
+  CHART-explore-51-1:
+    children: []
+    id: CHART-explore-51-1
+    meta:
+      chartId: 51
+      height: 24
+      sliceName: Telegram Numbers Total Number of Traders
+      uuid: 46964b6e-f939-40e9-8cd3-f62c8dfad553
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z30pal2_ue
+    - COLUMN-JBurp2TC-u
+    type: CHART
+  CHART-explore-52-1:
+    children: []
+    id: CHART-explore-52-1
+    meta:
+      chartId: 52
+      height: 50
+      sliceName: Telegram Usernames Daily Sale Volume
+      uuid: fb6b0d95-85ae-469f-8c6f-aa1ad398309f
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-_9SErt8lf
+    type: CHART
+  CHART-explore-56-1:
+    children: []
+    id: CHART-explore-56-1
+    meta:
+      chartId: 56
+      height: 24
+      sliceName: Telegram Numbers Initial Offering Total Sale Volume
+      uuid: a3f2ff13-680d-4e1b-9db2-b4c1776d7421
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z30pal2_ue
+    - COLUMN-OTOVF3a7eP
+    type: CHART
+  CHART-explore-57-1:
+    children: []
+    id: CHART-explore-57-1
+    meta:
+      chartId: 57
+      height: 24
+      sliceName: Telegram Numbers Secondary Sale Total Volume (through Fragment)
+      uuid: 190088c3-0512-4fd7-b2ae-98387d2b3679
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z30pal2_ue
+    - COLUMN-OTOVF3a7eP
+    type: CHART
+  CHART-explore-61-1:
+    children: []
+    id: CHART-explore-61-1
+    meta:
+      chartId: 61
+      height: 76
+      sliceName: TOP Telegram NFT Traders
+      uuid: 98d4ba94-bf0d-41f2-885a-6019f5b1ea6a
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-RQpDVApokE
+    type: CHART
+  CHART-explore-70-1:
+    children: []
+    id: CHART-explore-70-1
+    meta:
+      chartId: 70
+      height: 24
+      sliceName: Telegram Usernames Initial Offering Total Sale Volume
+      uuid: 0ac2c264-0f45-44f3-a8ee-eaf38241d117
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-sZwHCUoHx9
+    - COLUMN-HsKkkHTcOW
+    type: CHART
+  CHART-explore-71-1:
+    children: []
+    id: CHART-explore-71-1
+    meta:
+      chartId: 71
+      height: 24
+      sliceName: Telegram Usernames Secondary Sale Total Volume (through Fragment)
+      uuid: f8a1bb85-5b89-4cd3-8275-1dfbf6649507
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-sZwHCUoHx9
+    - COLUMN-HsKkkHTcOW
+    type: CHART
+  CHART-explore-72-1:
+    children: []
+    id: CHART-explore-72-1
+    meta:
+      chartId: 72
+      height: 24
+      sliceName: Telegram Usernames Initial Offering Total Number of Buyers
+      uuid: 3cc3a0fc-008e-41b5-ac1f-6009597fbe52
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z2-7hnqP2J
+    type: CHART
+  CHART-explore-73-1:
+    children: []
+    id: CHART-explore-73-1
+    meta:
+      chartId: 73
+      height: 24
+      sliceName: Telegram Usernames Total Number of Traders
+      uuid: d75808e6-899b-4895-bf86-b65c5f87198b
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z2-7hnqP2J
+    type: CHART
+  CHART-tRpi-rfN_Q:
+    children: []
+    id: CHART-tRpi-rfN_Q
+    meta:
+      chartId: 55
+      height: 24
+      sliceName: Telegram Numbers Initial Offering Total Number of Buyers
+      uuid: a48e3ee0-8c91-4c9a-8cb1-574d965d2e64
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z30pal2_ue
+    - COLUMN-JBurp2TC-u
+    type: CHART
+  COLUMN--aAGLd4maj:
+    children:
+    - CHART-explore-45-1
+    id: COLUMN--aAGLd4maj
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z30pal2_ue
+    type: COLUMN
+  COLUMN-HsKkkHTcOW:
+    children:
+    - CHART-explore-70-1
+    - CHART-explore-71-1
+    id: COLUMN-HsKkkHTcOW
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-sZwHCUoHx9
+    type: COLUMN
+  COLUMN-JBurp2TC-u:
+    children:
+    - CHART-tRpi-rfN_Q
+    - CHART-explore-51-1
+    id: COLUMN-JBurp2TC-u
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z30pal2_ue
+    type: COLUMN
+  COLUMN-OTOVF3a7eP:
+    children:
+    - CHART-explore-56-1
+    - CHART-explore-57-1
+    id: COLUMN-OTOVF3a7eP
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z30pal2_ue
+    type: COLUMN
+  COLUMN-mjz6Bg19EG:
+    children:
+    - CHART-explore-72-1
+    - CHART-explore-73-1
+    id: COLUMN-mjz6Bg19EG
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-sZwHCUoHx9
+    type: COLUMN
+  DASHBOARD_VERSION_KEY: v2
+  DIVIDER-gQNcwrZ19J:
+    children: []
+    id: DIVIDER-gQNcwrZ19J
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  DIVIDER-p_yt09JfSv:
+    children: []
+    id: DIVIDER-p_yt09JfSv
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  GRID_ID:
+    children:
+    - ROW-hEGlwizob
+    - ROW-p8E9jz0CEf
+    - ROW-z30pal2_ue
+    - DIVIDER-gQNcwrZ19J
+    - ROW-_9SErt8lf
+    - ROW-sZwHCUoHx9
+    - DIVIDER-p_yt09JfSv
+    - ROW-bbROeUvqn
+    - ROW-dpRCbnqMf
+    - ROW-RQpDVApokE
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Telemint
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-RQpDVApokE:
+    children:
+    - CHART-explore-61-1
+    id: ROW-RQpDVApokE
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-_9SErt8lf:
+    children:
+    - CHART-explore-52-1
+    - CHART-explore-53-1
+    - CHART-2v48mmmEfJ
+    id: ROW-_9SErt8lf
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-bbROeUvqn:
+    children:
+    - CHART-explore-54-1
+    id: ROW-bbROeUvqn
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-dpRCbnqMf:
+    children:
+    - CHART-explore-55-1
+    id: ROW-dpRCbnqMf
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-hEGlwizob:
+    children:
+    - CHART-explore-41-1
+    - CHART-explore-42-1
+    id: ROW-hEGlwizob
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-p8E9jz0CEf:
+    children:
+    - CHART-explore-43-1
+    - CHART-explore-44-1
+    id: ROW-p8E9jz0CEf
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-sZwHCUoHx9:
+    children:
+    - CHART-CgrfF2j9YD
+    - COLUMN-HsKkkHTcOW
+    - COLUMN-mjz6Bg19EG
+    id: ROW-sZwHCUoHx9
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-z30pal2_ue:
+    children:
+    - COLUMN--aAGLd4maj
+    - COLUMN-OTOVF3a7eP
+    - COLUMN-JBurp2TC-u
+    id: ROW-z30pal2_ue
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '3':
+      id: 3
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 11
+        - 28
+        - 31
+        - 37
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+        - 57
+        - 61
+        - 70
+        - 71
+        - 72
+        - 73
+    '11':
+      id: 11
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 28
+        - 31
+        - 37
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+        - 57
+        - 61
+        - 70
+        - 71
+        - 72
+        - 73
+    '28':
+      id: 28
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 11
+        - 31
+        - 37
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+        - 57
+        - 61
+        - 70
+        - 71
+        - 72
+        - 73
+    '31':
+      id: 31
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 11
+        - 28
+        - 37
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+        - 57
+        - 61
+        - 70
+        - 71
+        - 72
+        - 73
+    '37':
+      id: 37
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 11
+        - 28
+        - 31
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+        - 57
+        - 61
+        - 70
+        - 71
+        - 72
+        - 73
+    '52':
+      id: 52
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 11
+        - 28
+        - 31
+        - 37
+        - 51
+        - 53
+        - 54
+        - 55
+        - 56
+        - 57
+        - 61
+        - 70
+        - 71
+        - 72
+        - 73
+    '53':
+      id: 53
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 11
+        - 28
+        - 31
+        - 37
+        - 51
+        - 52
+        - 54
+        - 55
+        - 56
+        - 57
+        - 61
+        - 70
+        - 71
+        - 72
+        - 73
+    '54':
+      id: 54
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 11
+        - 28
+        - 31
+        - 37
+        - 51
+        - 52
+        - 53
+        - 55
+        - 56
+        - 57
+        - 61
+        - 70
+        - 71
+        - 72
+        - 73
+    '61':
+      id: 61
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 11
+        - 28
+        - 31
+        - 37
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+        - 57
+        - 70
+        - 71
+        - 72
+        - 73
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 3
+    - 11
+    - 28
+    - 31
+    - 37
+    - 51
+    - 52
+    - 53
+    - 54
+    - 55
+    - 56
+    - 57
+    - 61
+    - 70
+    - 71
+    - 72
+    - 73
+  color_scheme: supersetColors
+  refresh_frequency: 0
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  shared_label_colors:
+    count: '#1FA8C9'
+    initial_offering: '#1FA8C9'
+    secondary_sale: '#5AC189'
+    AVG(sale_price / 1e9): '#454E7C'
+    COUNT(DISTINCT buyer_address): '#FF7F44'
+    COUNT(DISTINCT seller_address): '#E04355'
+  color_scheme_domain:
+  - '#1FA8C9'
+  - '#454E7C'
+  - '#5AC189'
+  - '#FF7F44'
+  - '#666666'
+  - '#E04355'
+  - '#FCC700'
+  - '#A868B7'
+  - '#3CCCCB'
+  - '#A38F79'
+  - '#8FD3E4'
+  - '#A1A6BD'
+  - '#ACE1C4'
+  - '#FEC0A1'
+  - '#B2B2B2'
+  - '#EFA1AA'
+  - '#FDE380'
+  - '#D3B3DA'
+  - '#9EE5E5'
+  - '#D1C6BC'
+version: 1.0.0

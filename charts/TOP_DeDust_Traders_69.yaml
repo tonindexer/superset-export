@@ -1,0 +1,88 @@
+slice_name: TOP DeDust Traders
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 29__table
+  viz_type: table
+  slice_id: 69
+  query_mode: raw
+  groupby:
+  - expressionType: SQL
+    label: My column
+    sqlExpression: '''0:'' || encode(substring(trader_address, 2, 32), ''hex'')'
+  - expressionType: SQL
+    label: buy_volume
+    sqlExpression: CASE WHEN buy_volume IS NULL THEN 0 ELSE buy_volume END
+  - buy_count
+  - expressionType: SQL
+    label: sell_volume
+    sqlExpression: CASE WHEN sell_volume IS NULL THEN 0 ELSE sell_volume END
+  - sell_count
+  time_grain_sqla: P1D
+  temporal_columns_lookup: {}
+  metrics: []
+  all_columns:
+  - expressionType: SQL
+    label: My column
+    sqlExpression: '''0:'' || encode(substring(trader_address, 2, 32), ''hex'')'
+  - expressionType: SQL
+    label: buy_volume
+    sqlExpression: coalesce(buy_volume, 0)
+  - expressionType: SQL
+    label: buy_count
+    sqlExpression: coalesce(buy_count, 0)
+  - expressionType: SQL
+    label: sell_volume
+    sqlExpression: coalesce(sell_volume, 0)
+  - expressionType: SQL
+    label: sell_count
+    sqlExpression: coalesce(sell_count, 0)
+  percent_metrics: []
+  adhoc_filters: []
+  timeseries_limit_metric:
+    aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: false
+    label: sell_volume - buy_volume
+    optionName: metric_46jie3bpebj_huc1jnvtaa5
+    sqlExpression: sell_volume - buy_volume
+  order_by_cols:
+  - '["sell_volume", false]'
+  row_limit: 1000
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  page_length: 50
+  include_search: true
+  show_cell_bars: true
+  color_pn: true
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 7
+query_context: '{"datasource":{"id":29,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":[{"expressionType":"SQL","label":"My
+  column","sqlExpression":"''0:'' || encode(substring(trader_address, 2, 32), ''hex'')"},{"expressionType":"SQL","label":"buy_volume","sqlExpression":"coalesce(buy_volume,
+  0)"},{"expressionType":"SQL","label":"buy_count","sqlExpression":"coalesce(buy_count,
+  0)"},{"expressionType":"SQL","label":"sell_volume","sqlExpression":"coalesce(sell_volume,
+  0)"},{"expressionType":"SQL","label":"sell_count","sqlExpression":"coalesce(sell_count,
+  0)"}],"orderby":[["sell_volume",false]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"series_limit_metric":{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"sell_volume
+  - buy_volume","optionName":"metric_46jie3bpebj_huc1jnvtaa5","sqlExpression":"sell_volume
+  - buy_volume"},"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[]}],"form_data":{"datasource":"29__table","viz_type":"table","slice_id":69,"query_mode":"raw","groupby":[{"expressionType":"SQL","label":"My
+  column","sqlExpression":"''0:'' || encode(substring(trader_address, 2, 32), ''hex'')"},{"expressionType":"SQL","label":"buy_volume","sqlExpression":"CASE
+  WHEN buy_volume IS NULL THEN 0 ELSE buy_volume END"},"buy_count",{"expressionType":"SQL","label":"sell_volume","sqlExpression":"CASE
+  WHEN sell_volume IS NULL THEN 0 ELSE sell_volume END"},"sell_count"],"time_grain_sqla":"P1D","temporal_columns_lookup":{},"metrics":[],"all_columns":[{"expressionType":"SQL","label":"My
+  column","sqlExpression":"''0:'' || encode(substring(trader_address, 2, 32), ''hex'')"},{"expressionType":"SQL","label":"buy_volume","sqlExpression":"coalesce(buy_volume,
+  0)"},{"expressionType":"SQL","label":"buy_count","sqlExpression":"coalesce(buy_count,
+  0)"},{"expressionType":"SQL","label":"sell_volume","sqlExpression":"coalesce(sell_volume,
+  0)"},{"expressionType":"SQL","label":"sell_count","sqlExpression":"coalesce(sell_count,
+  0)"}],"percent_metrics":[],"adhoc_filters":[],"timeseries_limit_metric":{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"sell_volume
+  - buy_volume","optionName":"metric_46jie3bpebj_huc1jnvtaa5","sqlExpression":"sell_volume
+  - buy_volume"},"order_by_cols":["[\"sell_volume\", false]"],"row_limit":1000,"server_page_length":10,"order_desc":true,"table_timestamp_format":"smart_date","page_length":50,"include_search":true,"show_cell_bars":true,"color_pn":true,"conditional_formatting":[],"extra_form_data":{},"dashboards":[7],"force":false,"result_format":"json","result_type":"full","include_time":false},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 8bb3bf5b-664c-445a-b4f8-cbc124c34a8b
+version: 1.0.0
+dataset_uuid: f1cc914c-dede-4254-b33d-0e3dd1e91beb

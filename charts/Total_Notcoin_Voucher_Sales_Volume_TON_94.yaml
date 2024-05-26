@@ -1,0 +1,41 @@
+slice_name: Total Notcoin Voucher Sales Volume (TON)
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 37__table
+  viz_type: big_number_total
+  metric:
+    expressionType: SQL
+    sqlExpression: SUM(voucher_value * price_per_notcoin)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: SUM(voucher_value * price_per_notcoin)
+    optionName: metric_t57t1umg7dm_pcqud4uf8m
+  adhoc_filters:
+  - clause: WHERE
+    subject: created_at
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 14
+query_context: '{"datasource":{"id":37,"type":"table"},"force":false,"queries":[{"filters":[{"col":"created_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"SUM(voucher_value
+  * price_per_notcoin)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(voucher_value
+  * price_per_notcoin)","optionName":"metric_t57t1umg7dm_pcqud4uf8m"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"37__table","viz_type":"big_number_total","metric":{"expressionType":"SQL","sqlExpression":"SUM(voucher_value
+  * price_per_notcoin)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(voucher_value
+  * price_per_notcoin)","optionName":"metric_t57t1umg7dm_pcqud4uf8m"},"adhoc_filters":[{"clause":"WHERE","subject":"created_at","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","extra_form_data":{},"dashboards":[14],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 0066306e-650b-4b62-9014-399b06cf472b
+version: 1.0.0
+dataset_uuid: 7a8e1eb0-bef2-47a7-9e1e-cd0d9026524a

@@ -1,0 +1,104 @@
+table_name: stonfi_traders
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: public
+sql: "SELECT \n  trader_address, \n  SUM(\n    case\n      when asset_0_jetton_address\
+  \ = decode('001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f',\
+  \ 'hex') AND order_side = 'sell' then asset_0_amount / 1e9\n      when asset_1_jetton_address\
+  \ = decode('001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f',\
+  \ 'hex') AND order_side = 'buy' then asset_1_amount / 1e9\n    end\n  ) AS buy_volume,\n\
+  \  SUM(\n    case\n      when asset_0_jetton_address = decode('001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f',\
+  \ 'hex') AND order_side = 'sell' then 1\n      when asset_1_jetton_address = decode('001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f',\
+  \ 'hex') AND order_side = 'buy' then 1\n    end\n  ) AS buy_count,\n  SUM(\n   \
+  \ case\n      when asset_0_jetton_address = decode('001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f',\
+  \ 'hex') AND order_side = 'buy' then asset_0_amount / 1e9\n      when asset_1_jetton_address\
+  \ = decode('001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f',\
+  \ 'hex') AND order_side = 'sell' then asset_1_amount / 1e9\n    end\n  ) AS sell_volume,\n\
+  \  SUM(\n    case\n      when asset_0_jetton_address = decode('001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f',\
+  \ 'hex') AND order_side = 'buy' then 1\n      when asset_1_jetton_address = decode('001150b518b2626ad51899f98887f8824b70065456455f7fe2813f012699a4061f',\
+  \ 'hex') AND order_side = 'sell' then 1\n    end\n  ) AS sell_count\nFROM dex_operations\n\
+  WHERE exchange_name = 'stonfi'::dex_name\nGROUP BY trader_address"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 42bbb4d7-7634-4f05-a5d2-164f18d7c72b
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: trader_address
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BINARY
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: buy_volume
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: sell_volume
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: buy_count
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: sell_count
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 59f15a57-d852-4882-b71c-b8f76577e6e2

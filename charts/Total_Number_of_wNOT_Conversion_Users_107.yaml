@@ -1,0 +1,54 @@
+slice_name: Total Number of wNOT Conversion Users
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 44__table
+  viz_type: big_number_total
+  metric:
+    expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      changed_on: '2024-05-26T03:55:47.047595'
+      column_name: owner_address
+      created_on: '2024-05-26T03:55:47.047594'
+      description: null
+      expression: null
+      extra: null
+      filterable: true
+      groupby: true
+      id: 326
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: BYTEA
+      type_generic: null
+      uuid: 20e9ac96-8db8-4a5b-8881-8bad794e2196
+      verbose_name: null
+    aggregate: COUNT_DISTINCT
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: COUNT_DISTINCT(owner_address)
+    optionName: metric_pgoat9la4vn_l04uu4s2m2h
+  adhoc_filters:
+  - clause: WHERE
+    subject: created_at
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 14
+query_context: '{"datasource":{"id":44,"type":"table"},"force":false,"queries":[{"filters":[{"col":"created_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2024-05-26T03:55:47.047595","column_name":"owner_address","created_on":"2024-05-26T03:55:47.047594","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":326,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"BYTEA","type_generic":null,"uuid":"20e9ac96-8db8-4a5b-8881-8bad794e2196","verbose_name":null},"aggregate":"COUNT_DISTINCT","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT_DISTINCT(owner_address)","optionName":"metric_pgoat9la4vn_l04uu4s2m2h"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"44__table","viz_type":"big_number_total","metric":{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2024-05-26T03:55:47.047595","column_name":"owner_address","created_on":"2024-05-26T03:55:47.047594","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":326,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"BYTEA","type_generic":null,"uuid":"20e9ac96-8db8-4a5b-8881-8bad794e2196","verbose_name":null},"aggregate":"COUNT_DISTINCT","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT_DISTINCT(owner_address)","optionName":"metric_pgoat9la4vn_l04uu4s2m2h"},"adhoc_filters":[{"clause":"WHERE","subject":"created_at","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","extra_form_data":{},"dashboards":[14],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 0e5a7235-7052-48b5-83ad-dd90932c9931
+version: 1.0.0
+dataset_uuid: 47291458-33d4-4a66-9f49-84be92813e28

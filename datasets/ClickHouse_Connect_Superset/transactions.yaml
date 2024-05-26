@@ -11,6 +11,8 @@ template_params: null
 filter_select_enabled: true
 fetch_values_predicate: null
 extra: null
+normalize_columns: false
+always_filter_main_dttm: false
 uuid: a44dee17-b9f5-450b-a4a8-ae2a19c370ca
 metrics:
 - metric_name: count
@@ -19,6 +21,7 @@ metrics:
   expression: COUNT(*)
   description: null
   d3format: null
+  currency: null
   extra: null
   warning_text: null
 columns:

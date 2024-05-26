@@ -1,0 +1,64 @@
+slice_name: DeDust Total Volume of Swaps (TON)
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 28__table
+  viz_type: big_number_total
+  metric:
+    expressionType: SQL
+    sqlExpression: "SUM(\n  CASE\n    WHEN asset_0_type = 'native' THEN asset_0_amount\
+      \ / 1e9\n    WHEN asset_1_type = 'native' THEN asset_1_amount / 1e9\n  END\n\
+      )"
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: "SUM(\n  CASE\n    WHEN asset_0_type = 'native' THEN asset_0_amount / 1e9\n\
+      \    WHEN asset_1_type = 'native' THEN asset_1_amount / 1e9\n  END\n)"
+    optionName: metric_rk8ynx4dgff_vytwywkspck
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: created_at
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_lu29cyioyx_d5zxobb0ao
+  - expressionType: SQL
+    sqlExpression: operation_type = 'swap'
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_4futmzdmife_4lkg1knqnoc
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 7
+query_context: '{"datasource":{"id":28,"type":"table"},"force":false,"queries":[{"filters":[{"col":"created_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":"(operation_type = ''swap'')"},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"SUM(\n  CASE\n    WHEN
+  asset_0_type = ''native'' THEN asset_0_amount / 1e9\n    WHEN asset_1_type = ''native''
+  THEN asset_1_amount / 1e9\n  END\n)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(\n  CASE\n    WHEN
+  asset_0_type = ''native'' THEN asset_0_amount / 1e9\n    WHEN asset_1_type = ''native''
+  THEN asset_1_amount / 1e9\n  END\n)","optionName":"metric_rk8ynx4dgff_vytwywkspck"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"28__table","viz_type":"big_number_total","metric":{"expressionType":"SQL","sqlExpression":"SUM(\n  CASE\n    WHEN
+  asset_0_type = ''native'' THEN asset_0_amount / 1e9\n    WHEN asset_1_type = ''native''
+  THEN asset_1_amount / 1e9\n  END\n)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(\n  CASE\n    WHEN
+  asset_0_type = ''native'' THEN asset_0_amount / 1e9\n    WHEN asset_1_type = ''native''
+  THEN asset_1_amount / 1e9\n  END\n)","optionName":"metric_rk8ynx4dgff_vytwywkspck"},"adhoc_filters":[{"expressionType":"SIMPLE","subject":"created_at","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_lu29cyioyx_d5zxobb0ao"},{"expressionType":"SQL","sqlExpression":"operation_type
+  = ''swap''","clause":"WHERE","subject":null,"operator":null,"comparator":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_4futmzdmife_4lkg1knqnoc"}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","extra_form_data":{},"dashboards":[7],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 928643af-1a25-4999-b2c0-9ccea1ef6ee7
+version: 1.0.0
+dataset_uuid: 0b9819a4-073f-448a-a875-708989fbcd91

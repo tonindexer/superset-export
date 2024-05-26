@@ -1,0 +1,86 @@
+slice_name: DeDust Operations Volume (TON)
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 28__table
+  viz_type: echarts_timeseries_bar
+  x_axis: created_at
+  time_grain_sqla: P1W
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - expressionType: SQL
+    sqlExpression: "SUM(\n  CASE\n    WHEN asset_0_type = 'native' THEN asset_0_amount\
+      \ / 1e9\n    WHEN asset_1_type = 'native' THEN asset_1_amount / 1e9\n  END\n\
+      )"
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: "SUM(\n  CASE\n    WHEN asset_0_type = 'native' THEN asset_0_amount / 1e9\n\
+      \    WHEN asset_1_type = 'native' THEN asset_1_amount / 1e9\n  END\n)"
+    optionName: metric_rlgepp4qdle_al0xhlwiqh9
+  groupby:
+  - operation_type
+  adhoc_filters:
+  - clause: WHERE
+    subject: created_at
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  stack: Stack
+  only_total: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  y_axis_format: SMART_NUMBER
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 7
+query_context: '{"datasource":{"id":28,"type":"table"},"force":false,"queries":[{"filters":[{"col":"created_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1W","having":"","where":""},"applied_time_extras":{},"columns":[{"timeGrain":"P1W","columnType":"BASE_AXIS","sqlExpression":"created_at","label":"created_at","expressionType":"SQL"},"operation_type"],"metrics":[{"expressionType":"SQL","sqlExpression":"SUM(\n  CASE\n    WHEN
+  asset_0_type = ''native'' THEN asset_0_amount / 1e9\n    WHEN asset_1_type = ''native''
+  THEN asset_1_amount / 1e9\n  END\n)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(\n  CASE\n    WHEN
+  asset_0_type = ''native'' THEN asset_0_amount / 1e9\n    WHEN asset_1_type = ''native''
+  THEN asset_1_amount / 1e9\n  END\n)","optionName":"metric_rlgepp4qdle_al0xhlwiqh9"}],"orderby":[[{"expressionType":"SQL","sqlExpression":"SUM(\n  CASE\n    WHEN
+  asset_0_type = ''native'' THEN asset_0_amount / 1e9\n    WHEN asset_1_type = ''native''
+  THEN asset_1_amount / 1e9\n  END\n)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(\n  CASE\n    WHEN
+  asset_0_type = ''native'' THEN asset_0_amount / 1e9\n    WHEN asset_1_type = ''native''
+  THEN asset_1_amount / 1e9\n  END\n)","optionName":"metric_rlgepp4qdle_al0xhlwiqh9"},false]],"annotation_layers":[],"row_limit":10000,"series_columns":["operation_type"],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["created_at"],"columns":["operation_type"],"aggregates":{"SUM(\n  CASE\n    WHEN
+  asset_0_type = ''native'' THEN asset_0_amount / 1e9\n    WHEN asset_1_type = ''native''
+  THEN asset_1_amount / 1e9\n  END\n)":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"rename","options":{"columns":{"SUM(\n  CASE\n    WHEN
+  asset_0_type = ''native'' THEN asset_0_amount / 1e9\n    WHEN asset_1_type = ''native''
+  THEN asset_1_amount / 1e9\n  END\n)":null},"level":0,"inplace":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"28__table","viz_type":"echarts_timeseries_bar","x_axis":"created_at","time_grain_sqla":"P1W","x_axis_sort_asc":true,"x_axis_sort_series":"name","x_axis_sort_series_ascending":true,"metrics":[{"expressionType":"SQL","sqlExpression":"SUM(\n  CASE\n    WHEN
+  asset_0_type = ''native'' THEN asset_0_amount / 1e9\n    WHEN asset_1_type = ''native''
+  THEN asset_1_amount / 1e9\n  END\n)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(\n  CASE\n    WHEN
+  asset_0_type = ''native'' THEN asset_0_amount / 1e9\n    WHEN asset_1_type = ''native''
+  THEN asset_1_amount / 1e9\n  END\n)","optionName":"metric_rlgepp4qdle_al0xhlwiqh9"}],"groupby":["operation_type"],"adhoc_filters":[{"clause":"WHERE","subject":"created_at","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"order_desc":true,"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"orientation":"vertical","x_axis_title_margin":15,"y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","stack":"Stack","only_total":true,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","y_axis_format":"SMART_NUMBER","truncateXAxis":true,"y_axis_bounds":[null,null],"rich_tooltip":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[7],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 291a9be0-f69b-4fef-8430-f4080f8a0db7
+version: 1.0.0
+dataset_uuid: 0b9819a4-073f-448a-a875-708989fbcd91

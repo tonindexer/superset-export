@@ -1,0 +1,34 @@
+slice_name: Total Number of Notcoin Voucher Getgems Traders
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 42__table
+  viz_type: big_number_total
+  metric:
+    expressionType: SQL
+    sqlExpression: COUNT(DISTINCT buyer_address)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: COUNT(DISTINCT buyer_address)
+    optionName: metric_x4mwu3p1uen_5uc1x2xfp3u
+  adhoc_filters: []
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 14
+query_context: '{"datasource":{"id":42,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"COUNT(DISTINCT
+  buyer_address)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT(DISTINCT
+  buyer_address)","optionName":"metric_x4mwu3p1uen_5uc1x2xfp3u"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"42__table","viz_type":"big_number_total","metric":{"expressionType":"SQL","sqlExpression":"COUNT(DISTINCT
+  buyer_address)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT(DISTINCT
+  buyer_address)","optionName":"metric_x4mwu3p1uen_5uc1x2xfp3u"},"adhoc_filters":[],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","extra_form_data":{},"dashboards":[14],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 14e5ae9b-c55f-413b-9ac9-2607bfdd6d5e
+version: 1.0.0
+dataset_uuid: 91a4840d-cbdb-48c0-bae7-95fb884ee70d

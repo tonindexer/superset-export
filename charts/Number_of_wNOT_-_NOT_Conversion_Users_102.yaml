@@ -1,0 +1,82 @@
+slice_name: Number of wNOT -> NOT Conversion Users
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 44__table
+  viz_type: echarts_timeseries_bar
+  x_axis: created_at
+  time_grain_sqla: P1D
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      changed_on: '2024-05-26T03:55:47.047595'
+      column_name: owner_address
+      created_on: '2024-05-26T03:55:47.047594'
+      description: null
+      expression: null
+      extra: null
+      filterable: true
+      groupby: true
+      id: 326
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: BYTEA
+      type_generic: null
+      uuid: 20e9ac96-8db8-4a5b-8881-8bad794e2196
+      verbose_name: null
+    aggregate: COUNT_DISTINCT
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: COUNT_DISTINCT(owner_address)
+    optionName: metric_ohh7rbdaxo_3fmuvg111k3
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    subject: created_at
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  only_total: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  y_axis_format: SMART_NUMBER
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 14
+query_context: '{"datasource":{"id":44,"type":"table"},"force":false,"queries":[{"filters":[{"col":"created_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":[{"timeGrain":"P1D","columnType":"BASE_AXIS","sqlExpression":"created_at","label":"created_at","expressionType":"SQL"}],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2024-05-26T03:55:47.047595","column_name":"owner_address","created_on":"2024-05-26T03:55:47.047594","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":326,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"BYTEA","type_generic":null,"uuid":"20e9ac96-8db8-4a5b-8881-8bad794e2196","verbose_name":null},"aggregate":"COUNT_DISTINCT","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT_DISTINCT(owner_address)","optionName":"metric_ohh7rbdaxo_3fmuvg111k3"}],"orderby":[[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2024-05-26T03:55:47.047595","column_name":"owner_address","created_on":"2024-05-26T03:55:47.047594","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":326,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"BYTEA","type_generic":null,"uuid":"20e9ac96-8db8-4a5b-8881-8bad794e2196","verbose_name":null},"aggregate":"COUNT_DISTINCT","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT_DISTINCT(owner_address)","optionName":"metric_ohh7rbdaxo_3fmuvg111k3"},false]],"annotation_layers":[],"row_limit":10000,"series_columns":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["created_at"],"columns":[],"aggregates":{"COUNT_DISTINCT(owner_address)":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"flatten"}]}],"form_data":{"datasource":"44__table","viz_type":"echarts_timeseries_bar","x_axis":"created_at","time_grain_sqla":"P1D","x_axis_sort_asc":true,"x_axis_sort_series":"name","x_axis_sort_series_ascending":true,"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2024-05-26T03:55:47.047595","column_name":"owner_address","created_on":"2024-05-26T03:55:47.047594","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":326,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"BYTEA","type_generic":null,"uuid":"20e9ac96-8db8-4a5b-8881-8bad794e2196","verbose_name":null},"aggregate":"COUNT_DISTINCT","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT_DISTINCT(owner_address)","optionName":"metric_ohh7rbdaxo_3fmuvg111k3"}],"groupby":[],"adhoc_filters":[{"clause":"WHERE","subject":"created_at","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"order_desc":true,"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"orientation":"vertical","x_axis_title_margin":15,"y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","only_total":true,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","y_axis_format":"SMART_NUMBER","truncateXAxis":true,"y_axis_bounds":[null,null],"rich_tooltip":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[14],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: b79040e8-65d5-45af-a0d0-d481ca72aa5a
+version: 1.0.0
+dataset_uuid: 47291458-33d4-4a66-9f49-84be92813e28

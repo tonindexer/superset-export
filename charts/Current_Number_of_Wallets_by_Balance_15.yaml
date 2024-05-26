@@ -1,0 +1,76 @@
+slice_name: Current Number of Wallets by Balance
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 20__table
+  viz_type: pie
+  slice_id: 15
+  groupby:
+  - balance
+  metric:
+    expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      changed_on: '2024-03-30T17:32:05.012444'
+      column_name: number_of_wallets
+      created_on: '2024-03-30T17:32:05.012440'
+      description: null
+      expression: null
+      extra: null
+      filterable: true
+      groupby: true
+      id: 162
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: BIGINT
+      type_generic: 0
+      uuid: e35238a6-60fd-469d-92c3-df51484849a9
+      verbose_name: null
+    aggregate: MAX
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: MAX(number_of_wallets)
+    optionName: metric_yv3pwyfsyub_6zetvrovape
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: updated_at
+    operator: TEMPORAL_RANGE
+    operatorId: TEMPORAL_RANGE
+    comparator: Last day
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_wgb0noxijj9_h3ww9www6wt
+  row_limit: 100
+  sort_by_metric: true
+  color_scheme: supersetColors
+  show_labels_threshold: 5
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  legendMargin: null
+  label_type: key_value_percent
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  show_total: true
+  outerRadius: 81
+  donut: true
+  innerRadius: 30
+  extra_form_data: {}
+  dashboards:
+  - 2
+query_context: '{"datasource":{"id":20,"type":"table"},"force":false,"queries":[{"filters":[{"col":"updated_at","op":"TEMPORAL_RANGE","val":"Last
+  day"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["balance"],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2024-03-30T17:32:05.012444","column_name":"number_of_wallets","created_on":"2024-03-30T17:32:05.012440","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":162,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"BIGINT","type_generic":0,"uuid":"e35238a6-60fd-469d-92c3-df51484849a9","verbose_name":null},"aggregate":"MAX","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"MAX(number_of_wallets)","optionName":"metric_yv3pwyfsyub_6zetvrovape"}],"orderby":[[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2024-03-30T17:32:05.012444","column_name":"number_of_wallets","created_on":"2024-03-30T17:32:05.012440","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":162,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"BIGINT","type_generic":0,"uuid":"e35238a6-60fd-469d-92c3-df51484849a9","verbose_name":null},"aggregate":"MAX","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"MAX(number_of_wallets)","optionName":"metric_yv3pwyfsyub_6zetvrovape"},false]],"annotation_layers":[],"row_limit":100,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"20__table","viz_type":"pie","slice_id":15,"groupby":["balance"],"metric":{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2024-03-30T17:32:05.012444","column_name":"number_of_wallets","created_on":"2024-03-30T17:32:05.012440","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":162,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"BIGINT","type_generic":0,"uuid":"e35238a6-60fd-469d-92c3-df51484849a9","verbose_name":null},"aggregate":"MAX","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"MAX(number_of_wallets)","optionName":"metric_yv3pwyfsyub_6zetvrovape"},"adhoc_filters":[{"expressionType":"SIMPLE","subject":"updated_at","operator":"TEMPORAL_RANGE","operatorId":"TEMPORAL_RANGE","comparator":"Last
+  day","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_wgb0noxijj9_h3ww9www6wt"}],"row_limit":100,"sort_by_metric":true,"color_scheme":"supersetColors","show_labels_threshold":5,"show_legend":true,"legendType":"scroll","legendOrientation":"top","legendMargin":null,"label_type":"key_value_percent","number_format":"SMART_NUMBER","date_format":"smart_date","show_labels":true,"labels_outside":true,"show_total":true,"outerRadius":81,"donut":true,"innerRadius":30,"extra_form_data":{},"dashboards":[2],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 53266c00-0806-40c0-93e9-db700ea39283
+version: 1.0.0
+dataset_uuid: 6b6a161c-281d-4594-8872-a3b1eec35509

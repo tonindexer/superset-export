@@ -1,0 +1,61 @@
+slice_name: Total Getgems Sales Volume
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 26__table
+  viz_type: big_number_total
+  slice_id: 9
+  metric:
+    expressionType: SQL
+    sqlExpression: SUM(sale_price / 1e9)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: SUM(sale_price / 1e9)
+    optionName: metric_w8mkmifrvbm_n9v743g19a9
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: updated_at
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_aemfo15b24m_02o79xcofz3v
+  - expressionType: SQL
+    sqlExpression: marketplace_address = decode('00584ee61b2dff0837116d0fcb5078d93964bcbe9c05fd6a141b1bfca5d6a43e18',
+      'hex')
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_wmax4esgttn_0gi7cnat56ut
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 3
+query_context: '{"datasource":{"id":26,"type":"table"},"force":false,"queries":[{"filters":[{"col":"updated_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":"(marketplace_address = decode(''00584ee61b2dff0837116d0fcb5078d93964bcbe9c05fd6a141b1bfca5d6a43e18'',
+  ''hex''))"},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"SUM(sale_price
+  / 1e9)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(sale_price
+  / 1e9)","optionName":"metric_w8mkmifrvbm_n9v743g19a9"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"26__table","viz_type":"big_number_total","slice_id":9,"metric":{"expressionType":"SQL","sqlExpression":"SUM(sale_price
+  / 1e9)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(sale_price
+  / 1e9)","optionName":"metric_w8mkmifrvbm_n9v743g19a9"},"adhoc_filters":[{"expressionType":"SIMPLE","subject":"updated_at","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_aemfo15b24m_02o79xcofz3v"},{"expressionType":"SQL","sqlExpression":"marketplace_address
+  = decode(''00584ee61b2dff0837116d0fcb5078d93964bcbe9c05fd6a141b1bfca5d6a43e18'',
+  ''hex'')","clause":"WHERE","subject":null,"operator":null,"comparator":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_wmax4esgttn_0gi7cnat56ut"}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","extra_form_data":{},"dashboards":[3],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: f724e9a8-73e9-4c79-b64e-3820918b9fe3
+version: 1.0.0
+dataset_uuid: c00d9ff2-9c37-48f6-b57a-57cc0fa7c93c
